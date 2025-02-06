@@ -2,10 +2,6 @@
   <img src="_examples_javascript_beginners/assets/images/javascript_logo_4.png" alt="JavaScript logo" title="JavaScript for beginners" width="200" />
 </p>
     
-JavaScript for Beginners
-=====================
-JavaScript tutorial for Beginners
-=====================
 JavaScript basics and fundamentals for all
 =====================
 
@@ -36,9 +32,6 @@ Add topics to categorize your repository and make it more discoverable:
 - webdevelopment
 - front-end-development
 - webprogramming
-- plain-javascript
-- vanilla-javascript
-- javascript-typescript-es6
 
 Prerequisites for current course / What you need to know
 ---------------------
@@ -151,18 +144,6 @@ Topics include
     - 14.05. [JavaScript DOM HTML get set attributes](#1405-javaScript-dom-html-get-set-attributes)
 15. [What's Next Step?](#section-15-whats-next-step)
 
-Section 01. Course Introduction
-=====================
-
-01.01. Welcome
----------------------
-
-Hi All, I'm **`Dinanath Jayaswal, Senior UI/Web Developer and Adobe Certified Expert Professional`**, I wanna welcome you to JavaScript for Beginners. In this course, I will take you through with the ins and outs of learning JavaScript. This course will help you to learn the fundamentals of programming with JavaScript scripting language, from the basics to advanced topics step-by-step.
-
-01.02. Who is this for? Audience
----------------------
-
-This course is for any Web Designer, Developer who is interested in dynamic Web Design and Development / Web Programming with JavaScript. Anyone who wants to make a career in Web Development or planning on being a front-end developer must learn JavaScript.
 
 Section 02. Introducing JavaScript
 =====================
