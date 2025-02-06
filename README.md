@@ -125,66 +125,6 @@ Topics include
 Section 02. Introducing JavaScript
 =====================
 
-02.01. Importance
----------------------
-
-### 3 pillars / core Languages/Technologies used for Front End Web Design/Development:
-
-1. **HTML (HyperText Markup Language)** - Markup language, Essential Page Structure/Content, Readable and convey structure to a user, Text Layout Model, page Mark-up, Text, Tags, Data, details for pages, Images, Tables, Anchor Links, Forms
-    - HTML is an acronym stands for `HyperText Markup Language` which is used for creating `web pages and web applications`
-    - HTML is not a programming language; it is a markup language that defines the structure of your content ie. document
-
-2. **CSS (Cascading Style Sheet)** - Style Sheet language, Page Design / Presentation / Layouts / Styling / Formattings, look and feel, Creative part of Web Pages
-    - CSS is a stylesheet language that allows you to control the appearance (look and feel) of your webpages
-
-3. **`JavaScript (JS) - Scripting language, Dynamic Page Behaviour, Logics, Conditions and Validations, Events (mouse click, hover), Interactivity with User, Dynamic updates in a Web Page`**
-    - JavaScript is a `scripting language of the web` that allows you to do Interactivity with User-Events, implement Conditions and Validations, Dynamic updates in a Web Page, etc.
-
-> **Syntax & Example**: `02.01.js.intro.html`
-```html
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>02.01.js.intro.html</title>
-
-    <!-- internal style -->
-    <style>
-    /* css selector: { property:value; } */
-      body {
-          font-family: arial;
-      }
-    </style>
-
-    <!-- internal JavaScript - head section -->
-    <script>
-      // Write all JavaScript code here
-      alert('welcome to JavaScript');
-
-    </script>
-  
-  </head>
-
-  <body>
-
-    Content
-
-    <!-- internal JavaScript - body section -->
-    <script>
-        /* Write all JavaScript code here */
-        console.log('welcome to JavaScript');
-        
-    </script>
-
-  </body>
-
-</html>
-```
-
 02.02. What is JavaScript?
 ---------------------
 
@@ -199,30 +139,13 @@ Section 02. Introducing JavaScript
 > **Note**: <br/>
 Now-a-days with the help of `Node (Node.js)` JavaScript is used for `Back-end (Server-side)` API development. JavaScript is not compiled language, but it is a translated language (JavaScript Translator (embedded in the browser engine) is responsible for translating the JavaScript code for the web browser.
 
-<p>
-  <figure>
-    &nbsp;&nbsp;&nbsp; <img src="./_examples_javascript_beginners/assets/images/2.2.1-stackoverflow-developer-survey-2019.png" alt="Stackoverflow Programming, Scripting, and Markup Languages Survey 2019" title="Stackoverflow Programming, Scripting, and Markup Languages Survey 2019" width="1000" border="2" />
-    <figcaption>&nbsp;&nbsp;&nbsp; Image 02.02.01 - Stackoverflow Programming, Scripting, and Markup Languages Survey 2019</figcaption>
-  </figure>
-</p>
-
-<p>
-  <figure>
-    &nbsp;&nbsp;&nbsp; <img src="./_examples_javascript_beginners/assets/images/2.2.2-google-trends-compare.png" alt="Google Trends Language Compare " title="Google Trends Language Compare " width="1000" border="2" />
-    <figcaption>&nbsp;&nbsp;&nbsp; Image 02.02.02 - Google Trends - Language Compare </figcaption>
-  </figure>
-</p>
 
 02.03. What is a scripting language?
 ---------------------
 
 - A high-level programming language that is interpreted by another program at runtime rather than compiled by the computer's processor as other programming languages
-- A programming language designed for integrating and communicating with other programming languages
-    - Popular scripting languages are `JavaScript, VBScript, PHP, Perl, Python, Ruby, ASP`
-    - Since a scripting language is normally used in conjunction with another programming language, they are often found and used alongside `HTML, Java or C++`
 - The simple difference between scripting language and programming language is: Scripting languages do not require the compilation step and are rather interpreted
     - `C program` needs to be compiled before running whereas normally, a scripting language like `JavaScript or PHP` need not be compiled
-- Scripting is interpreted based language, whereas Java, C, C++, and others are compiler-based language
 
 ### What is a script?
 
@@ -230,18 +153,7 @@ Now-a-days with the help of `Node (Node.js)` JavaScript is used for `Back-end (S
 - Series of commands
 
 02.04. What can you do with JavaScript?
----------------------
-02.04. Use of JavaScript
----------------------
-
-For a long time, JavaScript is used only as a `Client Side Front End Development language` to build browser-based interactive web pages. But currently due to huge community support `(Node or Nide.js) JavaScript is multi-purpose language` and used to develop:
-- Full-fledged Enterprise Web Application
-- Full-blown Mobile Apps
-- Real-time Networking Apps (Chats, Audio/Video Streaming Services)
-- Games
-- Command Line Tools (CLI-Command Line Interface utilities)
-
-### 02.04.01. JavaScript is used in billions of Web pages/web apps to add interactivity, validate forms and much more:
+--------------------
 
 - JavaScript gives HTML designers a `programming tool`
 - JavaScript can react to `events` (mouse click, hover (rollover, rollout), focus, blur)
@@ -263,83 +175,8 @@ For a long time, JavaScript is used only as a `Client Side Front End Development
 02.05. Where does the JavaScript code run?
 ---------------------
 
-JavaScript was originally designed and developed to run only in browsers. But now with the help of the `Node/Node.js (C++ program, that includes Google's V8 JavaScript engine)` we can build the back-end(server-side) for our web and mobile applications.
+JavaScript was originally designed and developed to run only in browsers.
 
-### Common JavaScript Browser Engines
-
-| Browser                                      |   Engine                                  |
-| ---------------------------------------------|-------------------------------------------|
-| **Browser, Headless Browser, or Runtime**    | **JavaScript Engine**                     |
-| Mozilla                                      | Spidermonkey                              |
-| Safari**                                     | JavaScriptCore*                           |
-| IE and Edge                                  | Chakra                                    |
-| Chrome                                       | V8                                        |
-| TrifleJS                                     | V8                                        |
-| Node.js***                                   | V8                                        |
-| Io.js***                                     | V8                                        |
-| PhantomJS                                    | JavaScriptCore                            |
-| HTMLUnit                                     | Rhino                                     |
-| | |
-
-02.06. Who are using JavaScript? 
----------------------
-
-- JavaScript is used by:
-    - Front-end Developer
-    - Back-end Developer
-    - Full-stack Developer
-
-- Big companies and brands build entire applications: 
-    - Netflix
-    - Walmart
-    - PayPal
-    - Microsoft
-    - Facebook (React.js)
-    - Google (Angular.js)
-    - Ebay
-    - Uber
-    - Groupon
-
-02.07. History of JavaScript
----------------------
-
-- Invented by `“Brandan Eich”` at `Netscape` in `1995` originally named as `"LiveScript"`
-- `Netscape` & `Sun Java` agreements to rename `"LiveScript"` to `"JavaScript"` (As `java` is already popular in the market)
-- Not at-all related to `JAVA` (completely different in concept and design)
-- `Microsoft` has developed new version of "JavaScript" as `"JScript"` for `IE-3` in `1996`
-- JavaScript Submitted to `ECMAScript in 1997`
-
-02.08. JavaScript Vs ECMAScript
----------------------
-
-| JavaScript                                  | ECMAScript                                  |
-| :-------------------------------------------|:--------------------------------------------|
-| JavaScript is `scripting programming language`        | ECMAScript is a `specification/standard`             |
-| JavaScript is invented by `Brandan Eich` at `Netscape`| ECMAScript standards defined by `ECMA (European Computer Manufacturers Association)` |
-| JavaScript is released in 1995                        | First ECMAScript standard published in 1997          |
-| JavaScript uses/follows ECMAScript specifications/standards | ECMAScript specification defines many new features for JavaScript |
-| | |
-
-02.09. Types of Script
----------------------
-02.09. Various Scripting languages
----------------------
-02.09. Client-Side Scripting Vs Server Side Scripting
----------------------
-
-| Client-Side Scripting                     | Server-Side Scripting                     |
-| ------------------------------------------|-------------------------------------------|
-| Instruction for web Browser               | Instruction for web Server                |
-| Client-side scripting is used when the user's browser already has all the code and the page is altered based on the user's input     | Server-side scripting is used to create dynamic pages based several conditions when the user's browser requests the server       |
-| Response from a client-side script is faster as compared to a server-side script because the scripts are processed on the local computer | Response from a server-side script is slower as compared to a client-side script because the scripts are processed on the remote computer (server) |
-| Client-side scripting languages such as JavaScript, VBScript, etc. are interpreted and executed by the web browser | Server-side scripting languages such as ASP, PHP, Java, Python, Ruby, etc. run on the webserver and the output sent back to the web browser in HTML format
-| **Example**: Javascript, VB script, ActionScript, HTML, XHTML etc.  | **Example**: ASP, JSP, PHP, ASP#.Net, Perl, Ruby, Python, CGI etc.
-| | |
-
-02.10. Prerequisites of using HTML and JavaScript
----------------------
-
-### Tools for building web sites-web pages/writing HTML, CSS & JavaScript
 
 1. **Text Editor/HTML Editor/Code Editor/Visual Code Editor** - `NotePad, NotePad++, SublimeText, Atom, Brackets, Coda, Visual Studio Code, DreamWeaver` etc.
     - Just visit registered website of any of your favorite editor, download and install it (like **Visual Studio Code** = https://code.visualstudio.com)
