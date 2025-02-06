@@ -384,7 +384,7 @@ It is a good programming practice to use semicolons; after every statement
 
 - JavaScript is a case-sensitive language
 - in Javascript variables, language keywords, function names, and other identifiers must always be typed with a consistent capitalization of letters
-- **Example**: `var firstName='Dinanath';` and `var FirstName='Dinanath';` here `firstName & FirstName` are different ie. two different variable
+- **Example**: `var firstName='a';` and `var FirstName='b';` here `firstName & FirstName` are different ie. two different variable
 
 > **Note**: <br/>
 Take care/precautions while writing variable and function names in JavaScript
@@ -392,8 +392,6 @@ Take care/precautions while writing variable and function names in JavaScript
 ### 03.03.05. JavaScript Code Blocks
 
 - JavaScript commands/statements/code can be grouped together in code blocks, `inside curly brackets {...}`
-- Grouped statements/lines form code blocks
-- The purpose of code blocks is to define statements to be executed together like a single JavaScript command
 - An often occurrence of a code block in JavaScript is a JavaScript `function`
 
 > **Syntax & Example**: `03.03.05.script.js`
@@ -428,37 +426,14 @@ Usually, JavaScript commands/statements start with a `specific keyword` which de
 | ------------------|------------------|------------------|------------------|------------------|
 | break             | do ... while     | if ... else      | try ... catch    | const            |
 | continue          | for              | return           | var              | class            |
-| debugger          | function         | switch           | let              | import           |
+|                   | function         | switch           | let              | import           |
 | | | | | | 
 
-### 03.04.01. Reserved Keywords
-
-JavaScript has several reserved keywords. These are the words that you cannot use as identifiers (variable names, function names, and loop labels) in your JavaScript programs. The following list shows the keywords that are reserved in `ECMAScript 6`. It also includes keywords that are `reserved for future` as well as keywords that are `disallowed in strict mode`.
-- arguments, await, break, case, catch, class, const, continue, debugger, default, delete, do, else, enum, eval, export, extends, false, finally, for, function, if, implements, import, in, instanceof, interface, let, new, null, package, private, protected, public, return, static, super, switch, this, throw, true, try, typeof, var, void, while, with, yield, 
-
-03.05. Comments
----------------------
-- The comments are a meaningful way to `deliver the message (description to code)` for others/for future reference and to understand/follow the code statements/lines
-- Comments are special lines written for other developers as a reference purpose and browser ignores while interpreting
-- It is used to add information about the code, warnings or suggestions so that end-user can easily interpret the code (`Why and How of code/program/logic`)
-- Comments are used to explain code/programs/statements and to make it more readable for developers
-- A comment is ignored by the JavaScript engine embedded in the browser
-- Comments can also be used to prevent the execution of certain logic when testing code
-- Comments can be put into any place of a script, they don’t affect its program execution because the engine simply ignores them
-- Comments help to `make code easy to understand` and `it avoids the unnecessary code`
-
-### 03.05.01. Types of JavaScript Comments
-
-There are two types of comments in JavaScript:
-1. Single-line Comments
-2. Multi-line Comments
 
 #### 03.05.01.01. Single-line Comments
 
 - Single-line JavaScript comments are used for one line of comment only
 - Single-line comments starts with `two forward slash`: **// is single comment**
-- Any statements between `//` till the end of the line will be ignored by JavaScript (not be executed)
-- Single-line comments do not need closure/closing
 
 > **Syntax & Example**: `03.05.script.js`
 ```javascript
@@ -468,18 +443,13 @@ There are two types of comments in JavaScript:
 // show alert box
 alert('Welcome to JavaScript!');
 
-var firstName = 'Dinanath'; // variable to store firstName
-var lastName = 'Jayaswal'; // variable to store lastName
+var firstName = 'Alia'; // variable to store firstName
+var lastName = 'Ali'; // variable to store lastName
 ```
 
 #### 03.05.01.02. Multi-line Comments
 
-- Multi-line comments usually comment out a block of code
-- Multi-line comments in JavaScript can comment on bigger parts (a few lines) of code
-- Multi-line comments are more convenient as it can be used to comment single as well as multi-line comments
 - Multiline comments start with `forward slash and an asterisk, /* and also end with an asterisk and a forward slash */`:  /* multi-line comment */
-- Multi-line comments need closing
-- Multi-line comments are more often used for `formal documentation`
 
 > **Syntax & Example**: `03.05.script.js` 
 ```javascript
@@ -489,8 +459,6 @@ alert('Welcome to JavaScript!');
 /* This is a multiline comment.
 A code block can be commented on. */
 
-/* var firstName = 'Dinanath'; // variable to store firstName
-var lastName = 'Jayaswal'; // variable to store lastName */
 ```
 
 Section 04. JavaScript Language Fundamentals
@@ -500,14 +468,11 @@ Section 04. JavaScript Language Fundamentals
 ---------------------
 - JavaScript does not have any `display or built-in print` functions
 - Many times we may need to generate output from your JavaScript code like `see the value of a variable`, or `write a message to browser console` to help you `debug an issue` in your running JavaScript code, and so on
-- That is why you have to use the JavaScript output function to generating output `(browser window or browser console dialog boxes, writing output into an HTML element, etc.)`
-- Using different output methods knowledge will help you while debugging or rewriting your code more conveniently
 
 ### Different ways to show output/display data
 
 1. Writing into an alert box with `alert() or window.alert()`
-2. Writing into browser console with `console.log()`
-3. Writing into the HTML / Browser Window  with `document.write()`
+2. Writing into the HTML / Browser Window  with `document.write()`
 4. Write into an element of HTML / Inserting Output Inside an HTML Element with `innerHTML`
 
 #### 04.01.01. Displaying Output in Alert Dialog Boxes: alert() or window.alert()
@@ -525,24 +490,6 @@ alert('I am Dinanath Jayaswal');
 window.alert('We are learning JavaScript');
 ```
 
-#### 04.01.02. Writing Output to Browser Console: console.log()
-
-- Programmers can easily output a message or write data to the browser console using the `console.log()` method
-- `console.log()` function is mainly/widely used for `debugging code` as it makes the JavaScript output print to console
-- This is a simple, easy but very powerful method for generating detailed output
-
-> **Syntax & Example**: `04.01.02.script.js`
-```javascript
-// external js file
-// Write all JavaScript code here
-
-console.log('I am Dinanath Jayaswal');
-console.log('We are learning JavaScript');
-```
-
-> **Note**: <br/>
-Use `F12` key on the keyboard to open the `developer tools` then click on the `console tab`. You can write basic JavaScript statements directly in the browser console panel/tab and get the output.
-
 #### 04.01.03. Writing Output into the HTML / Browser Window: document.write()
 
 - `document.write()` method is used to write the content to the current document while document is being parsed
@@ -553,7 +500,6 @@ Use `F12` key on the keyboard to open the `developer tools` then click on the `c
 // external js file
 // Write all JavaScript code here
 
-document.write('I am Dinanath Jayaswal');
 document.write('We are learning JavaScript');
 ```
 
@@ -577,8 +523,6 @@ var paraText = document.getElementById('mainParaText');
 paraText.innerHTML = '<strong>This Paragraphic text inserted dynamically through innerHTML method.</strong>';
 ```
 
-With JavaScript, we can do many cool and dynamic pieces of stuff (Image Gallery, Games, Forms) but for that one should be familiar with core essentials/building blocks of JavaScript programming language like Variables, Functions, Operators, Loops, Conditional Statements, Array, Objects, Events, DOM (Document Object Model), etc. which will cover in coming lessons.
-
 Section 05. Variables
 =====================
 
@@ -588,20 +532,10 @@ Section 05. Variables
 Variables are one of the most fundamental concepts in JavaScript and other all programming languages of the world.
 
 - A variable is `container to store/hold the data/information`
-- Developers/Programmers use Variable to `store/hold the data/information temporarily` in computer memory 
-- A variable is a kind of data holder where we can store some value for programming or calculation purpose
 - A JavaScript variable is simply a `name of the storage location (named containers/named storage)` for data
-- Variables are symbolic names for values 
-- Variables are used to store data of different types like a string of text, numbers, boolean values like true/false, an array of data, etc. 
-- The data or value stored in the variables can be set, updated, and retrieved whenever needed
 - Variables are declared using the keyword `var` keyword
 - The `assignment operator (=)` is used to assign value to a variable, like this: `var varName = value;` or `var firstName = 'JavaScript';`
-- By default value of variable defined in JavaScript is `undefined` (variable is defined but value not assigned: `var firstName;` or `let lastName; console.log(firstName, lastName); ` // undefined)
-
-<hr/>
-
-- **Example**: Variables are like `box or an envelope` which we use to `organize various kinds of stuff` and put a `label` on each box or an envelope
-- **Example**: Variable declaration and assignment is just `like Maths & Algebra`: `x = 10`; and in JavaScript we write `var x = 10;`
+- By default value of variable defined in JavaScript is `undefined` (variable is defined but value not assigned)
 
 <hr/>
 
@@ -620,15 +554,12 @@ var techName = 'JavaScript'; // String literal
 var version = 6; // Number literal
 var isDone = true; // Boolean literal
 
-console.log('Learning '+techName+version);
 ```
-
-05.02. Declaring variable without a value
 ---------------------
 05.02. Creating a variable without a value
 ---------------------
 
-Variables can also be declared without having any initial values assigned to them. This is useful for variables that are supposed to hold values like user inputs, calculations, status updates, etc.
+Variables can also be declared without having any initial values assigned to them. 
 
 > **Syntax & Example**: `05.01.script.js`
 ```javascript
@@ -642,7 +573,6 @@ techName = 'JavaScript';
 version = 6;
 isDone = true;
 
-console.log('Learning '+techName+version);
 
 // ------------------------------
 
@@ -650,9 +580,7 @@ console.log('Learning '+techName+version);
 var userName;
 
 // Assigning value
-userName = 'Dinanath';
-
-console.log('Welcome '+userName);
+userName = 'Sarra';
 ```
 
 05.03. Declaring multiple variables at once
@@ -665,38 +593,11 @@ We can also `declare multiple variables` and set their initial values in a singl
 // Declaring multiple variables
 var techName = 'JavaScript', version = 6, isDone = true;
 
-// Declaring multiple variables in multiple lines for readability
-var techName = 'JavaScript', 
-version = 6, 
-isDone = true;
-
-console.log('Learning '+techName+version);
-
-// ------------------------------
-
-// Declaring multiple variables
-var firstName = 'Dinanath', lastName = 'Jayaswal', age = 35, isMarried = 'true';
-
-// Declaring multiple variables in multiple lines for readability
-/* var firstName = 'Dinanath', 
-lastName = 'Jayaswal', 
-age = 35, 
-isMarried = 'true'; */
-
-console.log('I am ' + firstName + ' ' + lastName);
 ```
-
 05.04. Variable Naming Conventions
 ---------------------
 05.04. Variable Naming Conventions (Identifiers)
 ---------------------
-
-All JavaScript variables must be `identified`/referred/defined/named with `unique names`, called as `identifiers`. The naming rules in JavaScript are not much different from any other programming language. 
-
-- There are some rules while declaring/naming a JavaScript variable (also known as `identifiers`)
-  - Identifiers are `simply names` in JavaScript
-  - Identifiers are used to name variables, keywords, functions, and labels
-  - Identifiers can be `short names/nick names` (like name, age, num1, isDone, sum) or more descriptive names (firstName, totalDashboards, isSeniorCitizen)
 
 **The basic rules for defining/assigning names for variables (unique identifiers) are:**
 
@@ -734,144 +635,16 @@ window.alert('variables details: ' +  _firstName + ' ' + $version + ' ' + $num_t
 // var #name;
 ```
 
-05.05. Variable Scope
----------------------
-
-The scope of a variable is the region/coverage of your program in which it is defined and exist/available. JavaScript variables have two scopes:
-1. Local Variables
-2. Global Variables
-
-#### 05.05.01. Local Variables
-
-- A JavaScript local variable is declared `inside block or function`
-- It is accessible within the `function or blocks only`
-- A local variable will be `visible only within a function` where it is defined
-- `Function parameters` are always local to that function
-
-> **Note**: <br/>
-In the function body, a `local variable takes precedence` over a global variable with the same name.
-
-> **Syntax & Example**: `05.05.01.script.js`
-```javascript
-// global variable
-var globalName = 'Global';
-
-window.alert(globalName);
-
-function showName() {
-  // local variable
-  var localName = 'Local';
-
-  window.alert(localName);
-  window.alert(globalName); // recall global variable
-}
-
-// invoke/call/run function
-showName();
-
-// error - as local variable not exist/available outside of block { }
-window.alert(localName);
-```
-
-#### 05.05.02. Global Variables
-
-- A variable `declared outside the function/at the root` or declared `with window object` is known as a global variable 
-- A JavaScript global variable is accessible from any function 
-- A global variable has a global scope which means it can be defined and accessible anywhere in JavaScript code/program
-
-> **Syntax & Example**: `05.05.02.script.js`
-```javascript
-// global variable
-var globalName = 'Global';
-
-window.alert(globalName);
-
-function showName() {
-  // local variable
-  var globalName = 'Local';
-
-  window.alert(globalName);
-
-  // define global variable with window
-  window.globalVersion = 29;
-  window.alert('global variable from inside function: ' + window.globalVersion);
-}
-
-// invoke/call/run function
-showName();
-
-// access global variable defined inside function
-window.alert('global variable from outside function: ' + window.globalVersion);
-```
-
-05.06. The let and const keywords ES6
----------------------
-ES6 introduces two new keywords `let` and `const` for declaring variables. The `var, let and const` keywords are almost the same, just a few differences with the scope.
-
-- In older programs` var` is used a lot which declares a variable `(function-scoped variables)`, but in a slightly different `old` way, with scope issues 
-- Both `let` and `const` keywords declare variables, `scoped at block-level ({})` 
-- Block scoping means that a new scope is created `between a pair of curly brackets {}`
-
-### 05.06.01. The let Keyword
-
-`ES6` introduces the new `let` keyword for declaring variables. Prior to ES6, the only way to declare a variable in JavaScript was the var keyword. Let's see what's the difference:
-- Variables declared with the `var` keyword are `function-scoped` and can be `hoisted` at the top within its scope
-- Variables declared with `let` keyword are `block-scoped ({})` and they are not hoisted
-
-> **Syntax & Example**: `05.06.01.script.js`
-```javascript
-// traditional var syntax
-var techName1 = 'JavaScript';
-
-for(var i = 1; i <= 5; i++) {
-  console.log('i : ' + i); // 1,2,3,4,5
-  console.log('inside block:' + techName1);
-  var version1 = 100;
-}
-console.log('outside: ' + i); 
-console.log('outside: ' + version1); 
-
-// ------------------------------
-
-// ES6 syntax
-let techName2 = 'LiveScript';
-
-for(let n = 1; n <= 5; n++) {
-  console.log('n : ' + n); // 1,2,3,4,5
-  console.log('inside block:' + techName2);
-  let version2 = 100;
-}
-
-console.log(n); // undefined
-console.log('outside: ' + version2);  // undefined
-```
-
 ### 05.06.02. The const Keyword
 
-`ES6` introduces the new `const` keyword for declaring variables. 
 - Use `const` to declare a constant `(read-only / unchanging)` variable
 - Constants are `read-only`, you `cannot reassign new values` to them
-- In Programm/logic when the variable will never change, they can be declared as `const`
-- constants are named using capital letters and underscore **Example**: const NATIVE_CITY
-- `const` are also `block-scoped` like `let`
-- However, you can change `object properties` or `array elements`
 
 > **Syntax & Example**: `05.06.02.script.js`
 ```javascript
 // traditional var syntax
-var PI1 = 3.14;
-console.log(PI1); // 3.14
-
-PI1 = 100;
-console.log(PI1); // 100
-
-// ------------------------------
-
-// ES6 syntax
-const PI2 = 6.28;
-console.log('ES6 syntax const: ' + PI2); // 6.28
-
-PI2 = 100; // error
+const PI1 = 3.14;
+PI1 = 100; // error
 ```
 
 Section 06. Data types
@@ -887,7 +660,6 @@ A variable in JavaScript can contain `any type of data`. Data types specify what
     - Boolean
     - Undefined
     - Null
-    - Symbol (newly introduced in ES6)
 2. Non-primitive (Reference or Composite) data type
     - Array
     - Object
@@ -897,8 +669,6 @@ A variable in JavaScript can contain `any type of data`. Data types specify what
 ---------------------
 06.02. Primitive, Primary or Value data type
 ---------------------
-
-Primitive data types can `hold only one value at a time`. Primitives are `compared by value`. Two values are strictly equal if they have the same value.
 
 There are different types of primitive data types in JavaScript. They are as follows:
 
@@ -977,9 +747,6 @@ var id = null;
 ---------------------
 
 - Non-primitive/Reference data types can hold `collections of values and more complex entities`
-- Non-primitive values are being compared by `reference` instead of value
-- Data does not store in the variables but stored on the heap - a dynamically allocated memory reference
-- Its a pointer to a location in memory, accessed by reference
 
 There are different types of non-primitive data types in JavaScript. They are as follows:
 
@@ -990,35 +757,11 @@ There are different types of non-primitive data types in JavaScript. They are as
 | Function        | represents function (bunch/block of line to execute once)             |
 | | |
 
-06.04. JavaScript has Dynamic Types
----------------------
-
-We have two types of programming languages:
-1. Static languages
-    - Declare a variable, the type of the variable is set and it cannot be changed in the future
-2. Dynamic languages
-    - Variable can change at run time (one variable can store different types of value as per requirement, we again assign any value any time as per logic, requirements)
-
-- A JavaScript `variable can contain/hold any data ie. any type of data`, A variable at one moment can be a number and at another moment be a string, boolean 
-- It simply means that `same variable can be used to hold different data types`
-- JavaScript is a dynamic type language, means you don't need to specify a type of the variable because it is dynamically used by JavaScript engine
-
-> **Syntax & Example**: `06.04.script.js`
-```javascript
-let name = 'JavaScript';
-name = false;
-name = 100;
-
-alert(name);
-alert(typeof(name));
-```
 
 06.05. The typeof Operator
 ---------------------
 
 - The typeof operator returns the `type of the argument`
-- It’s useful to process values of different types differently or want to perform a quick data type check
-- The typeof operator can be used to find out what `type of data a variable` or operand contains
 - It can be used with or without parentheses `(typeof(x)` or `typeof x`
 
 > **Syntax & Example**: `06.05.script.js`
@@ -1028,43 +771,17 @@ alert(typeof(name));
 alert(typeof "Hello"); // "string"
 alert(typeof '12'); // "string"
 
-// Numbers
-console.log(typeof(100)); // "number"
-console.log(typeof(100.29)); // "number"
 
 // Booleans
 alert(typeof true); // "boolean"
 alert(typeof(1 == 2)); // "boolean"
 
-// Undefined
-console.log(typeof undefined); // "undefined"
-
-var init;
-console.log('type of init: ' + typeof init); // "undefined"
-
-// Null
-console.log(typeof null); // "object"
-var initObject = null;
-console.log('type of initObject: ' + typeof initObject);  // "object"
-
-// Objects
-alert(typeof {name: 'Dinanath', age: 35}); // "object"
-alert(typeof document); // "object"
-alert(typeof window); // "object"
-
 // Arrays
 var techArray = [];
-console.log('type of techArray: ' + typeof techArray);  // "object"
 console.log(typeof ['JavaScript', 'jQuery', 'Angular']);  // "object"
-console.log(typeof ['Dinanath', 35, 'India']);  // "object"
 
 // Functions
-console.log(typeof function(){}); // "function"
-console.log(typeof alert); // "function"
 console.log(typeof window.alert); // "function"
-
-// Symbol
-alert(typeof Symbol("dob")); // "symbol"
 ```
 
 06.06. Type conversion
@@ -1073,62 +790,9 @@ alert(typeof Symbol("dob")); // "symbol"
 ---------------------
 
 - Type conversion is nothing but taking a variable and changing its data type as per needs requirements and logic
-- In JavaScript as and when we take an `input in the form, its data type is a string by default`, so do any calculations we need to `parse` to `integer/int or the number`
-- Data type conversion can be either implicit (automatic) or explicit (forcefully/manually)
 
 > **Syntax & Example**: 
 ```javascript
-// Number to String conversion
-let num1 = 100;
-
-console.log(num1);
-console.log(typeof num1);
-console.log(num1.length); //error as number type variables does not have length
-
-num1 = String(num1);
-
-console.log(num1);
-console.log(typeof num1);
-console.log(num1.length);
-
-// Boolean to String conversion
-let boolValue1 = String(false);
-
-console.log(boolValue1);
-console.log(typeof boolValue1);
-
-// Date to String conversion
-let curDate = String(new Date());
-
-console.log(curDate);
-console.log(typeof curDate);
-
-// Array to String conversion
-let numArray = String([1,2,3,4,5]);
-
-console.log(numArray);
-console.log(typeof numArray);
-
-// toString() method
-let curString = (1000).toString
-let curString = (true).toString
-
-//  String to Number conversion
-
-let num2 = '100';
-
-console.log(num2);
-console.log(typeof num2);
-console.log(num2.toFixed(2)); //helps to fix decimals - error as string type variables does not have any properties or methods related to number
-
-num2 = Number(num2);
-
-console.log(num2);
-console.log(typeof num2);
-console.log(num2.toFixed(2));
-
-// Boolean to Number conversion
-let boolValue2 = Number(false);
 
 // parseInt() method
 
@@ -1136,12 +800,10 @@ let curNumber = parseInt('100');
 let curNumber = parseFloat('100.41');
 ```
 
-06.07. Type coercion
+06.07. Type automatic conversion
 ---------------------
 
-- Type coercion simply refer to the JavaScript ability to convert type automatically (developer does not do it but JavaScript does it for us)
-- Type coercion is the process of converting a value from one type to another (such as string to a number, object to boolean, and so on)
-- JavaScript engine converts the type as per its rules (implicit ie. automatic conversion of data type)
+-  JavaScript ability to convert type automatically :
 
 > **Syntax & Example**: 
 ```javascript
@@ -1149,8 +811,7 @@ const num1 = '20';
 const num1 = 10;
 
 const sum = (num1) + (num2);
-console.log(sum);
-console.log(typeof sum);
+alert(sum);
 ```
 
 Section 07. Operators
