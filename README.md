@@ -176,7 +176,6 @@ JavaScript was originally designed and developed to run only in browsers.
 
 3. **JavaScript Output / Debugging Tool (Developer console)** - 
     - alert() or window.alert()
-    - console.log()
     - Google Chrome / Safari – `Developer Tools Inspect` / Inpsect element (in browser -> Right Click on page -> choose `Inspect / Inspect Element -> Console Tab`
     - Mozilla FireFox – `Firebug`
 
@@ -221,7 +220,6 @@ Section 03. JavaScript Getting Started
 > **Note**: <br/>
 JavaScript is the default scripting language in HTML. The old HTML standard attributes like `type="text/javascript"` and `language="javascript"` no longer required in modern browser 
 
-> **Syntax & Example**: `03.01.js.script.tag.html`
 ```html
 <head>
 
@@ -254,7 +252,6 @@ JavaScript is the default scripting language in HTML. The old HTML standard attr
     <!-- internal JavaScript - body section -->
     <script>
       /* Write all JavaScript code here */
-      console.log('welcome to JavaScript');
       document.write('This is dyanamic content. Hello All, Lets write something on web page');
       
     </script>
@@ -294,9 +291,7 @@ JavaScript is the default scripting language in HTML. The old HTML standard attr
 ### 03.02.02. Inside the BODY section (code between the body tag)
 
 - JavaScript programs/code/statements can be placed in the `<body>` section of an HTML page
-- As blocking nature of `<script>.....</script>` tag ideally, scripts should be placed at the end of the `body section`, just before the `closing </body> tag`, it will make your web pages load faster since it prevents obstruction of initial page rendering
-
-> **Syntax & Example**: `03.02.02.js.body.html`
+- As blocking nature of `<script>.....</script>` tag ideally, scripts should be placed at the end of the `body section`, just before the `closing </body> tag`, it will make your web pages load faster 
 ```html
 <body>
 
@@ -306,7 +301,6 @@ JavaScript is the default scripting language in HTML. The old HTML standard attr
     <script>
         // Write all JavaScript code here
         alert('welcome to JavaScript written in body section');
-        console.log('welcome to JavaScript written in body section');
         document.write('<h2>welcome to JavaScript written in body section</h2>');
 
     </script>
@@ -318,7 +312,6 @@ JavaScript is the default scripting language in HTML. The old HTML standard attr
 
 - We can easily write JavaScript code in between the `script element`. In a real-world application, we have 100+ maybe even 1000+ lines of code, we don't want to write all that code inline here
 - We must have to `extract and separate` our JavaScript behavior code from our HTML markup code
-- A simple thumb-rule is if we have a lot of JavaScript code, we can put it into a separate file
 - We can use/add/attach an external JavaScript file by using `<script>` tag with `src (source)` attribute:
     - ```<script src="path/scriptfile.js"></script>```
     - One can provide a `full URL (absolute path)` or `relative path` from the current page
@@ -352,7 +345,6 @@ Usually, when an external JavaScript file is downloaded for the first time, it i
 // Write all JavaScript code here
 
 alert('welcome to JavaScript written in external file');
-console.log('welcome to JavaScript written in external file');
 document.write('<h2>welcome to JavaScript written in external file</h2>');
 ```
 
@@ -369,12 +361,9 @@ The syntax of JavaScript is the `set of rules` that define a correctly structure
 - Statements are written in-between `<script>.....</script>` tag
 - Statements are separated by `Semicolon;` so we may write many statements in a line (optional)
 - JavaScript ignores extra line breaks and white spaces
-- JavaScript is case sensitive language (VB, Pascal, HTML are case insensitive)
+- JavaScript is case sensitive language 
 - JavaScript is interpreted not compiled (write and handed over to the web browser)
 - All statement in JavaScript should be terminated by a `Semicolon;` 
-
-> **Note**: <br/>
-JavaScript statements are composed of: **`Values, Operators, Expressions, Keywords, and Comments`**
 
 ### 03.03.02. Whitespace and Line Breaks
 
