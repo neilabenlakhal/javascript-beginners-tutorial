@@ -21,9 +21,6 @@ To move forward with JavaScript you just need basic knowledge of XHTML/HTML. Her
 Topics include
 =====================
 
-1. [Course Introduction](#section-01-course-introduction)
-    - 01.01. [Welcome](#0101-welcome)
-    - 01.02. [Who is this for? Audience](#0102-who-is-this-for-audience)
 2. [Introducing JavaScript](#section-02-introducing-javascript)
     - 02.01. [Importance](#0201-importance)
     - 02.02. [What is JavaScript?](#0202-what-is-javascript)
