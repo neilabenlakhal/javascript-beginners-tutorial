@@ -22,7 +22,6 @@ Topics include
 =====================
 
 2. [Introducing JavaScript](#section-02-introducing-javascript)
-    - 02.01. [Importance](#0201-importance)
     - 02.02. [What is JavaScript?](#0202-what-is-javascript)
     - 02.03. [What is a scripting language?](#0203-what-is-a-scripting-language)
     - 02.04. [What can you do with JavaScript?](#0204-what-can-you-do-with-javascript) | [Use of JavaScript?](#0204-use-of-javascript)
@@ -126,11 +125,7 @@ Section 02. Introducing JavaScript
 ---------------------
 
 - JavaScript is `1 of the 3 core language/layers` of web...(HTML, CSS & JavaScript)
-- JavaScript is one of the most popular, widely used, lightweight scripting programming language
-- JavaScript is an `Open Source`, `Cross-Platform`, and `Browser-based Client-Side (user computer)` programming language of the web
 - JavaScript is a dynamic computer programming language. It is an `interpreted (translated)` programming language with `object-oriented capabilities`
-- JavaScript is officially maintained by `ECMA (European Computer Manufacturers Association) as ECMAScript`
-- ECMAScript 6 (or `ES6` or ECMAScript 2015) is the latest major version of the ECMAScript standard
 - JavaScript is case sensitive language
 
 > **Note**: <br/>
@@ -141,13 +136,11 @@ Now-a-days with the help of `Node (Node.js)` JavaScript is used for `Back-end (S
 ---------------------
 
 - A high-level programming language that is interpreted by another program at runtime rather than compiled by the computer's processor as other programming languages
-- The simple difference between scripting language and programming language is: Scripting languages do not require the compilation step and are rather interpreted
-    - `C program` needs to be compiled before running whereas normally, a scripting language like `JavaScript or PHP` need not be compiled
+- `C program` needs to be compiled before running whereas normally, a scripting language like `JavaScript or PHP` need not be compiled
 
 ### What is a script?
 
 - A script is nothing but sets of instructions
-- Series of commands
 
 02.04. What can you do with JavaScript?
 --------------------
@@ -156,7 +149,6 @@ Now-a-days with the help of `Node (Node.js)` JavaScript is used for `Back-end (S
 - JavaScript can react to `events` (mouse click, hover (rollover, rollout), focus, blur)
 - JavaScript can be used to `validate` data (`Client-side validation`)
 - JavaScript can manipulate `HTML content` and `CSS styles` 
-- Dynamic `drop-down menus`, HTML contents at run time/on the fly
 - Displaying live/current/dynamic `date and time (clocks)`
 - Displaying `pop-up windows` and `dialog boxes` (an `alert`, `confirm` and `prompt` dialog box)
 - Change the website's `behavior` and make it more `dynamic with advanced` web designs
