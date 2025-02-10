@@ -196,12 +196,13 @@ JavaScript is the default scripting language in HTML. The old HTML standard attr
 
 <body>
     
-    Content
+    <p id="para">Content</p>
 
     <!-- internal JavaScript - body section -->
     <script>
       /* Write all JavaScript code here */
       document.write('This is dyanamic content. Hello All, Lets write something on web page');
+      document.getElementById("para").innerHTML="This is dyanamic content. Hello All, Lets write something on web page";
       
     </script>
     
