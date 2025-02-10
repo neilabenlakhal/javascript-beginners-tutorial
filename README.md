@@ -152,12 +152,10 @@ Now-a-days with the help of `Node (Node.js)` JavaScript is used for `Back-end (S
 - Displaying live/current/dynamic `date and time (clocks)`
 - Displaying `pop-up windows` and `dialog boxes` (an `alert`, `confirm` and `prompt` dialog box)
 - Change the website's `behavior` and make it more `dynamic with advanced` web designs
-- Perform and `control transitions` and `animations`
 
 ### However, there are more serious uses for javascript:
 
 - **Browser Detection** - Detecting the browser used by a visitor
-- **Cookies** - Storing information on the visitor's computer
 - **Control Browsers** - Opening pages in customized windows
 - **Validate Forms** - Validating inputs to fields before submitting a form
 
@@ -167,9 +165,8 @@ Now-a-days with the help of `Node (Node.js)` JavaScript is used for `Back-end (S
 JavaScript was originally designed and developed to run only in browsers.
 
 
-1. **Text Editor/HTML Editor/Code Editor/Visual Code Editor** - `NotePad, NotePad++, SublimeText, Atom, Brackets, Coda, Visual Studio Code, DreamWeaver` etc.
-    - Just visit registered website of any of your favorite editor, download and install it (like **Visual Studio Code** = https://code.visualstudio.com)
-    - A JavaScript file (.js) is a text file itself consists of JavaScript code/statements, so to create/modify a JavaScript file we can use any text editors
+1. **Text Editor/HTML Editor/Code Editor/Visual Code Editor** - 
+    - A JavaScript file (.js) is a text file itself consists of JavaScript code/statements, so to create/modify a JavaScript file we can use any text editors (like **Visual Studio Code** = https://code.visualstudio.com)
 
 2. **Browsers - To view output of .html pages with .js files** - `Google Chrome, Mozilla Firefox, Internet Explorer, Safari` etc.
     - Once the .html/.htm file created and saved, we can create a .js file and link within HTML and then we can see its output in any latest web browser
@@ -178,30 +175,6 @@ JavaScript was originally designed and developed to run only in browsers.
     - alert() or window.alert()
     - Google Chrome / Safari – `Developer Tools Inspect` / Inpsect element (in browser -> Right Click on page -> choose `Inspect / Inspect Element -> Console Tab`
     - Mozilla FireFox – `Firebug`
-
-> **Note**: <br/> 
-Use `F12` key on the keyboard to open the `developer tools` then click on the `Console Tab`, OR on empty area in browser page `Right Click -> Inspect (Developer Tool) -> Console Tab`. Here You can write basic JavaScript statements and/or valid JavaScript code directly in browser console panel/tab and get the output
-
-<p>
-  <figure>
-    &nbsp;&nbsp;&nbsp; <img src="./_examples_javascript_beginners/assets/images/browsers_all_2.png" alt="all browsers" title="widely used browsers" width="400" border="2" />
-    <figcaption>&nbsp;&nbsp;&nbsp; Image 02.10.01 - Widely used modern browsers</figcaption>
-  </figure>
-</p>
-
-<p>
-  <figure>
-    &nbsp;&nbsp;&nbsp; <img src="./_examples_javascript_beginners/assets/images/developer_tool_inspect_console.png" alt="developer tool inspect console" title="developer tool inspect console" border="2" />
-    <figcaption>&nbsp;&nbsp;&nbsp; Image 02.10.02 - Developer Tool Inspect Console</figcaption>
-  </figure>
-</p>
-
-<p>
-  <figure>
-    &nbsp;&nbsp;&nbsp; <img src="./_examples_javascript_beginners/assets/images/2.10-console-log-alert.png" alt="developer tool inspect console" title="developer tool inspect console" border="2" />
-    <figcaption>&nbsp;&nbsp;&nbsp; Image 02.10.03 - Developer Tool Inspect Console</figcaption>
-  </figure>
-</p>
 
 Section 03. JavaScript Getting Started
 =====================
@@ -290,12 +263,12 @@ JavaScript is the default scripting language in HTML. The old HTML standard attr
 
 ### 03.02.02. Inside the BODY section (code between the body tag)
 
-- JavaScript programs/code/statements can be placed in the `<body>` section of an HTML page
+- JavaScript code/statements can be placed in the `<body>` section of an HTML page
 - As blocking nature of `<script>.....</script>` tag ideally, scripts should be placed at the end of the `body section`, just before the `closing </body> tag`, it will make your web pages load faster 
 ```html
 <body>
 
-    page content
+    <p>page content</p>
 
     <!-- internal JavaScript - body section -->
     <script>
@@ -310,22 +283,11 @@ JavaScript is the default scripting language in HTML. The old HTML standard attr
 
 ### 03.02.03. External JavaScript .js file (separation of concern)
 
-- We can easily write JavaScript code in between the `script element`. In a real-world application, we have 100+ maybe even 1000+ lines of code, we don't want to write all that code inline here
+- We can easily write JavaScript code in between the `script element`. In a real-world application, we have 1000+ lines of code, we don't want to write all that code inline here
 - We must have to `extract and separate` our JavaScript behavior code from our HTML markup code
 - We can use/add/attach an external JavaScript file by using `<script>` tag with `src (source)` attribute:
-    - ```<script src="path/scriptfile.js"></script>```
-    - One can provide a `full URL (absolute path)` or `relative path` from the current page
+    - ```<script src="scriptfile.js"></script>```
 - We can create a single external JavaScript file and embed it in many/any HTML page which provide `code re-usability`
-
-### 03.02.04. Advantages of External JavaScript 
-
-- It separates HTML and JavaScript code (separation of concern)
-- Code re-usability
-- It makes HTML and JavaScript file/code easier to read, maintain and more meaningful/semantic
-- Web page loads faster /increase the speed of the webpage (Cached JavaScript files)
-
-> **Note**: <br/>
-Usually, when an external JavaScript file is downloaded for the first time, it is stored in the browser's cache (like images and style sheets), so it won't need to be get downloaded multiple times from the web server that makes the web pages load faster/quickly.
 
 > **Syntax & Example - `.html file`**: `03.02.03.js.external.html`
 ```html
@@ -355,27 +317,13 @@ The syntax of JavaScript is the `set of rules` that define a correctly structure
 ### 03.03.01. JavaScript Statements
 
 - One line of JavaScript Code is one JavaScript Statement / Instruction / Command
-- Statements are a command to Browser to do something / perform actions
-- A Statement is a piece of code that expresses an action to take place
 - JavaScript code/program (or just JavaScript) is a sequence of statements
 - Statements are written in-between `<script>.....</script>` tag
-- Statements are separated by `Semicolon;` so we may write many statements in a line (optional)
-- JavaScript ignores extra line breaks and white spaces
-- JavaScript is case sensitive language 
-- JavaScript is interpreted not compiled (write and handed over to the web browser)
-- All statement in JavaScript should be terminated by a `Semicolon;` 
-
-### 03.03.02. Whitespace and Line Breaks
-
-- JavaScript ignores `spaces, tabs, and newlines` that appear in JavaScript programs
-- We can freely use spaces, tabs, and newlines to format and indent programs in a neat-clean and consistent way that makes the code easy to read and understand (not advisable)
 
 ### 03.03.03. Semicolons
 
 - JavaScript statements are generally followed by a `semicolon; character`
-- A semicolon may be omitted in `most cases` when a line break exists
 - JavaScript interprets the line break as an `implicit` semicolon, called an `automatic semicolon insertion`
-- **In most cases, a newline implies a semicolon, But “in most cases” does not mean “always”!**
 
 > **Note**: <br/>
 It is a good programming practice to use semicolons; after every statement
@@ -417,18 +365,6 @@ sayHello();
 showTotal();
 ```
 
-03.04. JavaScript Keywords
----------------------
-
-Usually, JavaScript commands/statements start with a `specific keyword` which defines what `action/function` should the browser will perform/do:
-
-| Keyword           | Keyword          |Keyword           | Keyword          |Keyword           |
-| ------------------|------------------|------------------|------------------|------------------|
-| break             | do ... while     | if ... else      | try ... catch    | const            |
-| continue          | for              | return           | var              | class            |
-|                   | function         | switch           | let              | import           |
-| | | | | | 
-
 
 #### 03.05.01.01. Single-line Comments
 
@@ -467,7 +403,6 @@ Section 04. JavaScript Language Fundamentals
 04.01. Generating Output
 ---------------------
 - JavaScript does not have any `display or built-in print` functions
-- Many times we may need to generate output from your JavaScript code like `see the value of a variable`, or `write a message to browser console` to help you `debug an issue` in your running JavaScript code, and so on
 
 ### Different ways to show output/display data
 
@@ -486,7 +421,7 @@ Section 04. JavaScript Language Fundamentals
 // external js file
 // Write all JavaScript code here
 
-alert('I am Dinanath Jayaswal');
+alert('I am Javascript course');
 window.alert('We are learning JavaScript');
 ```
 
@@ -526,12 +461,6 @@ paraText.innerHTML = '<strong>This Paragraphic text inserted dynamically through
 Section 05. Variables
 =====================
 
-05.01. What is Variable?
----------------------
-
-Variables are one of the most fundamental concepts in JavaScript and other all programming languages of the world.
-
-- A variable is `container to store/hold the data/information`
 - A JavaScript variable is simply a `name of the storage location (named containers/named storage)` for data
 - Variables are declared using the keyword `var` keyword
 - The `assignment operator (=)` is used to assign value to a variable, like this: `var varName = value;` or `var firstName = 'JavaScript';`
@@ -539,11 +468,9 @@ Variables are one of the most fundamental concepts in JavaScript and other all p
 
 <hr/>
 
-> **Note**: <br/>
-In ES6 `'let'` and `'const'` keywords are used to defined variables
 
 > **Note**: <br/>
-As a best practice of ES6, from now onwards variables must be define with `let` keyword: `let techName = 'JavaScript' ; `
+As a best practice of newer JS versions, variables can be be defined with `let` keyword: `let techName = 'JavaScript' ; `
 
 <hr/>
 
@@ -594,7 +521,6 @@ We can also `declare multiple variables` and set their initial values in a singl
 var techName = 'JavaScript', version = 6, isDone = true;
 
 ```
-05.04. Variable Naming Conventions
 ---------------------
 05.04. Variable Naming Conventions (Identifiers)
 ---------------------
@@ -610,26 +536,18 @@ var techName = 'JavaScript', version = 6, isDone = true;
 - A variable name `cannot contain spaces`
   - **Example**: var num total;
 - A variable Names are `case sensitive`
-  - **Example**: var firstName='Dinanath'; and var FirstName='Dinanath'; here `firstName & FirstName` are different ie. two different variable
+  - **Example**: var firstName='Sarra'; and var FirstName='Sarra'; here `firstName & FirstName` are different ie. two different variable
 - A variable name cannot be a `JavaScript keyword or a JavaScript reserved word`
    - **Example**: var var; var switch; var for; var true;
-- One should Always give `meaningful/descriptive names` to variables
-- for naming the variables that contain multiple words, `camelCase` method is commonly used (camelCase is the default method for identifier naming)
-
-> **Note**: <br/>
-In the programming world, there have been two most popular methods/mechanism of writing multiple words identifiers: (Underscore, Camel Case)
-
-1. **Underscore**: first_name, last_name, date_of_birth, is_passed, native_place
-2. **Camel Case:**: firstName, lastName, dateOfBirth, isPassed, nativePlace  OR <br/> : FirstName, LastName, DateOfBirth, IsPassed, NativePlace 
 
 > **Syntax & Example**: `05.04.script.js`
 ```javascript
 // variables defined to hold different types of data
-var _firstName = 'JavaScript';
-var $version = 6;
+var firstName = 'JavaScript';
+var _version = 6;
 var $num_total1 = 10;
 
-window.alert('variables details: ' +  _firstName + ' ' + $version + ' ' + $num_total1);
+window.alert('variables details: ' +  _firstName + ' ' + _version + ' ' + $num_total1);
 
 // wrong identifiers
 // var #name;
@@ -729,34 +647,6 @@ var firstName;
 var country;
 ```
 
-### 06.02.05. Null
-
-- A null value means that there is no value
-- The special value which represents `“ nothing”, “empty” or “value unknown”`
-- It is not equivalent to an empty string ('' or ' ', "", " "), it is simply nothing
-- **Example**: 
-
-```js
-var firstName = null;
-var id = null;
-```
-
-06.03. Non-primitive data type
----------------------
-06.03. Non-primitive, Reference or Composite data type
----------------------
-
-- Non-primitive/Reference data types can hold `collections of values and more complex entities`
-
-There are different types of non-primitive data types in JavaScript. They are as follows:
-
-| Data Type       | Description                                                           |
-| ----------------|-----------------------------------------------------------------------|
-| Array           | represents a group of similar value (multiple values in one variable) |
-| Object          | represents an instance through which we can access members (property & value) |
-| Function        | represents function (bunch/block of line to execute once)             |
-| | |
-
 
 06.05. The typeof Operator
 ---------------------
@@ -810,50 +700,15 @@ let curNumber = parseFloat('100.41');
 const num1 = '20';
 const num1 = 10;
 
-const sum = (num1) + (num2);
+const sum = num1 + num2;
 alert(sum);
 ```
 
 Section 07. Operators
 =====================   
 
-07.01. What is the Operator?
----------------------
-- We know/use many operators since our initial school days, they are things like addition +, multiplication *, subtraction -, open-close round bracket ( ) or square bracket [ ]
-- Operators are symbols/keywords that tell the JavaScript engine to `perform some sort of actions`
-- JavaScript operators are symbols that are used to perform operations on operands
-- Operators used along with our variables and constants to create
-expressions to implement logic and algorithms
-
-> **Note**: <br/>
-Let us take a simple expression `var sum = 1 + 2`;
-- Here 1 and 2 are called `operands` and 
-- `=` & `+` are called the `operator`
-- `= is the assignment` operator, `+ is the arithmetic` operator
-
-> **Syntax & Example**: `07.01.script.js`
-```javascript
-// Lets take a look on simple expression 
-var sum = 1 + 2;
-
-// Here 1 and 2 are called `operands` and 
-// `=` & `+` are called the `operator`
-// `= is the assignment` operator, `+ is the arithmetic` operator
-```
-
-**JavaScript supports the following types of operators**:
-1. Arithmetic Operators
-2. Assignment Operators
-3. Logical Operators
-4. Comparison (or Relational) Operators
-5. Conditional (or ternary) Operators
-6. String Operators
-7. Bitwise Operators
-
 07.02. Arithmetic Operators
 ----------------------
-
-- Arithmetic operators are used to performing arithmetic operations (just like mathematics - calculations) on numbers/the operands
 
 JavaScript supports the following Arithmetic operators (List of Arithmetic operators):
 
@@ -915,20 +770,20 @@ var num2 = 20
 
 // old methodology
 // num1 = num1 + num2;
-// console.log(num1); // 30
+//alert(num1); // 30
 
 // new techniques
 num1 += num2; 
-console.log(num1); // 30
+alert(num1); // 30
 
 // num2 -= num1; 
-// console.log(num2); // 10
+// alert(num2); // 10
 
 // num1 *= num2; 
-// console.log(num1); // 200
+// alert(num1); // 200
 
 // num2 /= num1; 
-// console.log(num2); // 2
+// alert(num2); // 2
 ```
 
 07.04. Logical Operators
@@ -946,54 +801,6 @@ JavaScript supports the following Logical operators (List of Logical operators):
 | !               | Logical NOT                           | !x; (True if x is not true)           |
 | | | |
 
-> **Syntax & Example**: `07.04.01.script.js`
-```javascript
-// Logical operators - basic examples
-
-// && (Logical AND) - returns true if both operands are true
-console.log('true && true: ', true && true);
-console.log('true && false: ', true && false);
-console.log('false && true: ', false && true);
-
-// ------------------------------
-
-// || (Logical OR) - returns true if one of the operand is true
-console.log('true || true: ', true || true);
-console.log('true || false: ', true || false);
-console.log('false || true: ', false || true);
-
-// ------------------------------
-
-// ! (Logical NOT) True if operand is not true (means I will be true if other is false)
-var isSeniorCitizen = true;
-
-var isYoungGeneration = !isSeniorCitizen;
-console.log('isYoungGeneration: ', isYoungGeneration);
-```
-<hr/>
-
-> **Syntax & Example**: `07.04.02.script.js`
-```javascript
-// Logical operators - real world scenario/example
-
-// check credit/loan eligibility - (if applicant have HIGH INCOME & GOOD CREDIT SCORE, he is eligible for credit/loan)
-var isEarningHighIncome = true;
-var isGoodCibilScore = false;
-var isEligibleForLoan;
-
-// check eligibility with && Logical AND operator
-isEligibleForLoan = isEarningHighIncome && isGoodCibilScore;
-alert('isEligibleForLoan: ' + isEligibleForLoan);
-
-// check eligibility with || Logical OR operator
-isEligibleForLoan = isEarningHighIncome || isGoodCibilScore;
-alert('isEligibleForLoan: ' + isEligibleForLoan);
-
-// ! Logical NOT
-var isLoanRefused = !isEligibleForLoan;
-alert('isLoanRefused: ' + isLoanRefused);
-```
-
 07.05. Comparison (or Relational) Operators
 ---------------------
 07.05. Comparison Operators
@@ -1010,7 +817,6 @@ JavaScript supports the following Comparison (or Relational) operators (List of 
 | Operators | Description                           | Example / Result                      |
 | ----------|---------------------------------------|---------------------------------------|
 | ==  <br/>(Loose Equality Operator)      | Is equal to / identical               | x == y    (True if x is equal to y)     |
-| === <br/>(Strict Equality Operator)      | Eqaul/identical value and identical type| x === y (True if x is equal to y, and they are of the same type) |
 | !=        | Not equal to / different              | x != y (True if x is not equal to y)           |
 | !==       | Not identical    / different value or different type | x !== y )True if x is not equal to y, or they are not of the same type) |
 | <         | Less than                             | x < y (True if x is less than y)|
@@ -1024,53 +830,11 @@ JavaScript supports the following Comparison (or Relational) operators (List of 
 // Comparison (or Relational) operators
 var num1 = 25;
 var num2 = 35;
-var num3 = "25";
+var num3 = 250;
  
-alert(num1 == num3);  // true
-alert(num1 === num3); // false
+alert(num1 == num3);  // false
 alert(num1 != num2);  // true
-alert(num1 !== num3); // true
-alert(num1 < num2);   // true
-alert(num1 > num2);   // false
-alert(num1 <= num2);  // true
-alert(num1 >= num2);  // false
-```
 
-07.06. Conditional (? or ternary) Operator
----------------------
-07.06. Conditional Operator
----------------------
-07.06. Ternary Operator
----------------------
-
-- Conditional Operator returns a value based on the condition, it is like if-else
-- The conditional (ternary) operator is the only JavaScript operator that takes three operands 
-- The conditional operator that assigns a value to a variable based on some condition
-- This operator is frequently used as a shortcut/short-hand method for the if statement
-- **Syntax**: variablename = (condition) ? TRUE value: FALSE value 
-
-| Operators | Description                           | Example / Result                      |
-| ----------|---------------------------------------|---------------------------------------|
-| ?         | Ternary operator                      | var result = x < y ? 'x is smaller' : 'y is smaller' (short hand method to write if condition)  |
-| | | |
-
-> **Syntax & Example**: `07.06.script.js`
-```javascript
-// Conditional (? or ternary) Operator
-
-// age category
-var currentAge = 100;
-var category;
-
-category = (currentAge < 18) ? 'Minor' : 'Major';
-alert('AGE category: ' + category);
-
-// fees category
-var isAuthorisedMember = true;
-var fees;
-
-fees = (isAuthorisedMember == true) ? 5 : 10;
-alert('fees / charges: ' + fees); 
 ```
 
 07.07. String Operators
@@ -1098,59 +862,8 @@ message1 += message2;
 alert(message1); // Outputs: Hello World!
 ```
 
-07.08. Operator precedence
----------------------
-
-- If an expression has more than one operator, the `execution order is defined by their precedence`, or the implicit priority order of operators
-- Operator precedence determines/describes the way in which operators are parsed with respect to each other / `order in which operations are performed`
-- The operations inside the `parentheses ()` are computed first
-- If many operations have the same precedence (like addition and subtraction), they are `computed from left to right`
-
-> **Syntax & Example**: `07.08.script.js`
-```javascript
-// Operator precedence
-var result1 = 10 + 2 * 5
-alert('10 + 2 * 5 =  ' + result1); // answer is 20 NOT 60 (12 * 5 ), actually * or multiplication have higher precedence so the actual calculation is like 10 + ( 2*5 ) = 10 + 10 = 20
-
-// change precedence with `parentheses ()` 
-var result2 = (10 + 2) * 5;
-alert('(10 + 2) * 5 =  ' + result2); // (12) * 5 = 60
-
-// same precedence operators
-var result3 = 10 + 5 - 2
-alert('10 + 5 - 2 =  ' + result3); // 13 first addition than subtraction
-
-var result4 = 10 + (5 - 2);
-alert('10 + (5 - 2) =  ' + result4); // 13 first subtraction ie. ( ) than addition
-```
-
 Section 08. Functions
 =====================
-
-08.01. What is a Function?
----------------------
-
-- A function is basically a `group of statements that perform specific tasks/operations`
-- Functions provide a way to `create reusable code packages` which are more portable and easier to debug
-- Functions allow a programmer to `divide a big program` into a number of/several small and manageable functions
-- It helps programmers in writing `modular codes`
-- The function is a kind of reusable tool where we can write code/functionality to reuse whenever we want (Function allow the code to be called many times without repetition)
-- Wrapping up / making smaller chunks of statements / reusable codes together for readability or separation of concern/proper organization is functions – (Grouping of a repetitive task)
-- Functions (logical block of code) are one of the most important control structure in any programming language
-- In other languages, it might be called `MODULES, SUBROUTINES(SUB-ROUTINES)`
-- There are two steps to utilize function: 
-  1. create/define a function with `function` keyword  
-  2. call/invoke a function
-
-> **Note**: <br/>
-Best Practice - First Define function than call/envoke it!
-
-#### 08.01.01. Here are some advantages of using functions:
-
-- **Code reusability** - call a function several times
-- **Less coding** - makes our program compact, no need to write lines of code each time
-- **Easier to maintain** - changes are done only at one location
-- **Easier to eliminate the errors** - fixing errors becomes much easier
 
 #### 08.01.02. Function Definition / Function Declaration / Creating Function
 
@@ -1166,7 +879,6 @@ Best Practice - First Define function than call/envoke it!
 function showMessage () {
   //Body of function 
   //code to be executed
-  console.log('welcome to JavaScript function');
   alert('welcome to JavaScript function');    
 }
 ```
@@ -1181,17 +893,6 @@ function showMessage () {
 
 showMessage();
 ```
-
-#### 08.01.04. Function Naming
-
-Function `denotes an action/task`. The function name should be `brief, as accurate as possible and describe` what the function does, like a `verb`.
-
-Usually, Function name starts with:
-
-- "getSomething" – returns value,
-- "createSomething" – create something,
-- "calcSomething" – calculate something,
-- "checkSomething" – check something and return a boolean, etc.
 
 Examples of function names:
 - getSum();
@@ -1212,13 +913,12 @@ Examples of function names:
 
 > **Syntax & Example**: `08.02.01.script.js`
 ```javascript
-var name = 'Dinanath';
+var course = 'Javascript';
 
 //1. define / declare / create function
 function sayHello () {
   //Body of function 
   //code to be executed
-  console.log('Hello ' + name);
   alert('Hello ' + name);    
 }
 
@@ -1238,14 +938,13 @@ sayHello();
 function sayHello (name) {
   //Body of function 
   //code to be executed
-  console.log('Hello ' + name);
   alert('Hello ' + name);    
 }
 
 //2. invoke / call the function
-sayHello('Dinanath');
+sayHello('Javascript');
 
-sayHello('Dino');
+sayHello('JS');
 
 // ------------------------------
 
@@ -1253,46 +952,13 @@ var total;
 
 function calculateSum (num1, num2) {
   total = num1 + num2;
-  console.log(total);
+  alert(total);
 }
 
 calculateSum(10, 20);
 calculateSum(100, 200);
 ```
 
-#### 08.02.02.02. Default Values for Function Parameters ES6
-
-With ES6, now you can specify default values to the function parameters. This means that if no arguments are provided to the function when it is called these default parameters values will be used.
-
-> **Syntax & Example**: `08.02.02.02.script.js`
-```javascript
-// Parameterized function with default parameters
-
-//1. define / declare / create function
-function sayHello (name = 'User') {
-  //Body of function 
-  //code to be executed
-  console.log('Hello ' + name);
-  alert('Hello ' + name);    
-}
-
-//2. invoke / call the function
-sayHello();
-
-sayHello('Amber');
-
-// ------------------------------
-
-var total;
-
-function calculateSum (num1=1, num2=2) {
-  total = num1 + num2;
-  console.log(total);
-}
-
-calculateSum();
-calculateSum(100, 200);
-```
 
 #### 08.02.03. Return Type Function (Function returning values)
 
@@ -1312,8 +978,8 @@ function getSum (num1, num2) {
 }
 
 //2. invoke / call the function
-console.log(getSum(10,20));
-console.log(getSum(100,200));
+alert(getSum(10,20));
+alert(getSum(100,200));
 
 var total = getSum(50,50);
 alert(total);
@@ -1374,158 +1040,42 @@ var sum1 = getSum2;
 alert(sum1(5,10));
 ```
 
-#### 08.03.03. Immediately invoked function expression (IIFE)
 
-- It runs as soon as the browser finds it
-- Declare and run the function at the same time
-
-> **Syntax & Example**: `08.03.03.script.js`
-```javascript
-// Immediately invoked function expression (IIFE)
-(function () {
-  console.log('Welcome to Immediately invoked function expression (IIFE)');
-}());
-
-
-(function(userName) {
-  console.log('Welcome', userName);
-})('Dinanath');
-```
-
-08.04. String Methods and Concatenation
+08.04. String Methods
 ---------------------
 
 > **Syntax & Example**: 
 ```javascript
 
-const firstName = 'Dinanath';
-const lastName = 'Jayaswal'
+const firstName = 'Sarra';
+const lastName = 'BA'
 
 const fullName = (firstName) + (lastName);
-console.log(fullName);
-console.log(typeof fullName);
 
 // concatenation
-console.log(firstName + ' ' + lastName);
-
-console.log('Hello ' + firstName + ' ' + lastName + 'Welcome to JavaScript!');
-
-// append
-let name1 = 'Dinanath ';
-let name1 += 'Jayaswal';
-console.log(name1);
-
-// concat() method
-console.log(firstName.concat(' ', lastName));
+alert(firstName + ' ' + lastName);
 
 // length
-console.log(firstName.length);
+alert(firstName.length);
 
 // change case
 console.log(firstName.toLowercase());
 console.log(firstName.toUppercase());
 
-// escaping
-// let statement1 = 'wait I'm coming, that's good';
-let statement1 = "wait I'm coming, that's good";
-let statement2 = 'wait I\'m coming, that\'s good';
-
-// string array - get specific character from string like an array
-console.log(firstName[0]);
 
 // indexOf
-console.log(firstName.indexOf('i'));
-console.log(firstName.lastIndexOf('a'));
+alert(firstName.indexOf('i'));
+alert(firstName.lastIndexOf('a'));
 
 // charAt()
-console.log(firstName.charAt(2));
-
-// get last character from string
-console.log(firstName.charAt(firstName.length - 1));
-
-// replace();
-let replaceString = ('Dinanath', 'DJ');
-console.log('My name is:', replaceString); 
+alert(firstName.charAt(2));
 
 // substring();
-console.log(firstName.substring(0,4));
+alert(firstName.substring(0,4));
 
-// slice();
-console.log(firstName.slice(0,4));
-
-// slice(); negative number starts from backside
-console.log(firstName.slice(-2));
-
-// includes();
-let message2 = 'Hello Dinanath, welcome to JavaScript';
-console.log(message2.includes('Hello'));
-console.log(message2.includes('Hi'));
-
-// split()
-let message2 = 'Hello Dinanath, welcome, to JavaScript';
-console.log(message2.split(','));
-console.log(message2.split(' '));
-
-let courses = 'html5, css3, javascript, angular';
-console.log(courses.split(','));
 
 ```
 
-08.05. Template String
----------------------
-08.05. Template Literals
----------------------
-
-- ES6 new feature `Strings Template` offers a convenient way to work with string concatenation/interpolation
-- Template literals provide an easy and clean way to create multi-line strings and perform string interpolation
-- Intuitive expression interpolation for single-line and multi-line strings
-- Use `back-tick (grave accent)` character and `{ var name in curly brace }`, no + plus sign required
-- The best part of Template Literals (Template Strings) is we can `use 'single' "double" quotes inside`
-
-- It is part of ES6 but compatible with all the modern browsers and its latest versions
-
-> **Syntax & Example**: 
-```javascript
-
-//old plain javascript approach
-let user = 'Dinanath';
-let greetMessage1 = 'Welcome' + ' ' + user + ' ' + 'to JavaScript.';
-
-console.log(greetMessage1);
- 
-console.log('// ------------------------------');
-
-const firstName = 'Dinanath';
-const lastName = 'Jayaswal'
-const course = 'JavaScript'
-
-const fullName = `Hey ${firstName} ${lastName} Welcome to ${course}.`
-
-console.log('// ------------------------------');
-
-//ES6 Template Literals (Template Strings) approach
-let greetMessage2 = `Hello ${firstName}, How are you?`;
-
-console.log(greetMessage2);
-
-console.log('// ------------------------------');
-// ------------------------------
-
-//ES6 multi-line string
-let greetMessage3 = `ES6 Template Literals (Template Strings):
-                    With Template Literals (Template Strings)
-                    we can add multiple lines in string concatenation/interpolation
-`;
-
-console.log(greetMessage3);
-
-let greetMessage4 = ES6 Template Literals (Template Strings):
-                    With Template Literals (Template Strings)
-                    we can add multiple lines in string concatenation/interpolation
-;
-
-console.log(greetMessage4);
-```
 
 Section 09. Loops
 =====================  
@@ -1533,11 +1083,6 @@ Section 09. Loops and Iterations
 =====================
 
 - Loops are used to execute the `same block of code again, with a different value, until a certain condition is met`
-- Loops can execute/repeat a block of code (an action) a number of/several times
-- The basic idea behind a loop is to `automate the repetitive tasks within a program to save time and effort`
-- It makes the `code compact`
-- It is mostly used in array or object (to iterate through series)
-- Loops/iterations is an instruction repeat until a specific condition is reached
 
 ### Different Types of Loops in JavaScript:
 
@@ -1545,7 +1090,6 @@ Section 09. Loops and Iterations
 2. while loop
 3. do...while loop
 4. for...in loop
-5. for...of loop (ES6)
 6. for...each
 
 09.01. The for loop
@@ -1573,22 +1117,10 @@ Section 09. Loops and Iterations
 for (let i=1; i<=5; i++) {
   alert('Hello, The current index/num is: ' + i);
   document.write('<li>Hello, The current index/num is: ' + i + '</li>');
-  console.log('Hello, The current index/num is: ' + i);
+  document.write('Hello, The current index/num is: ' + i);
 }
 ```
 
-### 09.01.01. The for loop - Reverse order
-
-> **Syntax & Example**: `09.01.02.script.js`
-```javascript
-// for loop - reverse order
-
-for (let i = 5; i >= 1; i--) {
-  alert('Hello, The current index/num is: ' + i);
-  document.write('<li>Hello, The current index/num is: ' + i + '</li>');
-  console.log('Hello, The current index/num is: ' + i);
-}
-```
 
 ### 09.01.02. The for loop - Find Even or Odd number
 
@@ -1598,9 +1130,9 @@ for (let i = 5; i >= 1; i--) {
 
 for (let i = 1; i <= 10; i++) {
   if (i % 2 == 0) {
-    console.log('The current index/num is EVEN : ' + i);
+    alert('The current index/num is EVEN : ' + i);
   } /* else {
-    console.log('The current index/num is ODD : ' + i);
+    alert('The current index/num is ODD : ' + i);
   } */
 }
 ```
@@ -1624,7 +1156,6 @@ let i = 1;
 while (i <= 5) {
   alert('Hello, The current index/num is: ' + i);
   document.write('<li>Hello, The current index/num is: ' + i + '</li>');
-  console.log('Hello, The current index/num is: ' + i);
   i++;
 }
 ```
@@ -1657,201 +1188,6 @@ do {
 while (i <= 5); 
 ```
 
-09.04. The for in loop
----------------------
-09.04. The for...in loop
----------------------
-
-- The for-in loop is a special type of a loop that `iterates over the properties of an object or the elements of an array`
-
-#### 09.04.01. The for...in Loop - array
-
-> **Syntax & Example**: `09.04.01.script.js`
-```javascript
-// for...in loop
-
-/*for(variable/key in array/object) {
-    // Code to be executed
-}*/
-
-// An array with some elements
-let arrColors = ["Red", "Green", "Blue", "Cyan", "Magenta", "Yellow", "Black"];
-
-// Loop through all the elements in the array 
-for (let color in arrColors) {
-  alert('Color is: ' + arrColors[color]);
-  document.write('<li>Color is: ' + arrColors[color] + '</li>');
-  console.log('Color is: ' + arrColors[color]);
-}
-```
-
-#### 09.04.02. The for...in Loop - object
-
-> **Syntax & Example**: `09.04.02.script.js`
-```javascript
-// for...in loop
-
-/*for(variable/key in array/object) {
-    // Code to be executed
-}*/
-
-// An object with some properties 
-let objEmployee = {'emp_name': 'Dinanath', 'emp_addres': 'Mumbai', 'emp_id': '029', 'emp_age':35};
-
-// Loop through all the properties in the object  
-for (emp in objEmployee) {
-  alert('Employee '+ emp + ' is: ' + objEmployee[emp]);
-  document.write('<li>Employee '+ emp + ' is: ' + objEmployee[emp] + '</li>');
-  console.log('Employee '+ emp + ' is: ' + objEmployee[emp]);
-}
-```
-
-#### 09.04.03. The for...in Loop - Inbuilt JavaScript objects
-
-> **Syntax & Example**: `09.04.03.script.js`
-```javascript
-// for...in loop
-
-/*for(variable/key in array/object) {
-    // Code to be executed
-}*/
-
-// Loop through all the properties in the inbuilt object - window, document, navigator
-for (props in window) {
-  // alert('document object properties ' + props);
-  document.write('<li>document object properties ' + props + '</li>');
-  console.log('document object properties ' + props);
-}
-```
-
-09.05. The for of loop
----------------------
-09.05. The for...of loop (ES6)
----------------------
-
-- Loops over `iterable objects such as arrays, strings`, etc.
-- ES6 introduces a new for-of loop which allows us to iterate over arrays or strings very easily
-- The code inside the loop is executed for each element of the iterable object
-
-> **Syntax & Example**: `09.05.01.script.js`
-```javascript
-// for...of loop
-
-/*for(element in array/string) {
-  // Code to be executed
-} */
-
-// Iterating over an array
-let arrDays = ["Monday", "TuesDay", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-
-for (let day of arrDays) {
-  console.log(day);
-  document.write('<li>' + day + '</li>');
-}
-
-// Iterating over string
-let name = 'JavaScript';
-for (let letter of name) {
-  document.write(letter + ',');
-  console.log(letter + ',');
-}
-```
-
-09.06. Break and Continue statement
----------------------
-
-- `break` and `continue` keywords/statement can change `how the loop behaves`
-- `break` and `continue` keywords can be used in all loops to stop or continue the loop
-- The `break` statement is used to exit a loop early, to "jump out" of a loop, stops executing/running a loop
-- The `continue` statement tells the interpreter to immediately start the next iteration of the loop and skip the remaining code block
-
-> **Syntax & Example**: `09.06.01.script.js`
-```javascript
-// break continue statement
-
-/* break */
-let arrDays = ["Monday", "TuesDay", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-
-let i = 1;
-while (i <= 10) {
-  if (i == 5) {
-    break;
-  }
-  console.log(i);
-  i++
-}
-
-console.log('// ------------------------------');
-
-for (let i = 0; i <= arrDays.length; i++) {
-  if (i == 3) {
-    break;
-  }
-  console.log(arrDays[i]);
-}
-
-console.log('// ------------------------------');
-
-/* continue */
-i = 1;
-while (i <= 20) {
-  if (i % 2 == 0) {
-    // console.log('Even Number ', i);
-    i++;
-    continue; // skip rest of the loop body
-
-    i + 100; // non of use 
-    console.log('just in even num continue'); // non of use 
-  }
-  console.log('Odd Number ', i);
-  i++;
-}
-
-console.log('// ------------------------------');
-
-for (i = 1; i <= 10; i++) {
-  if (i === 5) {
-    continue; // skip rest of the loop body
-    console.log('just after 5 continue...'); // non of use 
-  }
-  console.log(i);
-}
-
-console.log('// ------------------------------');
-
-for(let int = 0; int < 10; int++) {
-
-  if(int === 2) {
-    console.log('2 is favorite EVEN number');
-    continue;
-  }
-
-  if(int === 5) {
-    console.log('at 5 stop the loop');
-    break;
-  }
-
-  console.log('current Number is:', int); 
-}
-
-```
-
-09.07. for each loop
----------------------
-09.07. for...each loop
----------------------
-
-> **Syntax & Example**: ``
-```javascript
-
-let arrDays = ["Monday", "TuesDay", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-
-arrDays.forEach(function(day)){
-  console.log(day);
-}
-
-```
-
 Section 10. Conditions
 =====================
 Section 10. Conditions - Control Flow
@@ -1874,14 +1210,6 @@ Section 10. Conditions - Control Flow
 10.01. The if statement and comparison operators
 ---------------------
 
-- If the conditional statement is the simplest and basic control statement make decisions and execute statements conditionally
-- The if statement is used to execute a block of code `only if the specified condition evaluates to true`
-- It evaluates the content only `if an expression is true`
-
-If conditional statements are used to evaluate some kind of condition and do something/perform some actions based on the result
-
-> **Note**: <br/>
-Use `if` to specify a block of code to be executed, `if a specified condition is true`
 
 > **Syntax & Example**: `10.01.01.script.js`
 ```javascript
@@ -1892,15 +1220,13 @@ Use `if` to specify a block of code to be executed, `if a specified condition is
 }
 */
 
-let user = 'Dinanath';
+let user = 'A';
 
-if (user == 'Dinanath') {
-  console.log('Welcome Dinanath!');
-  window.alert('Welcome Dinanath!');
+if (user == 'A') {
+  window.alert('Welcome A!');
 }
 
-if (user == 'Dinanath') {
-  console.log('Welcome Authorised User: ' + user + '!');
+if (user == 'B') {
   window.alert('Welcome Authorised User: ' + user + '!');
 }
 
@@ -1909,7 +1235,6 @@ if (user == 'Dinanath') {
 let age = 20;
 
 if (age >= 18) {
-  console.log('MAJOR! Eligible for Voting');
   window.alert('MAJOR! Eligible for Voting');
 }
 
@@ -1918,47 +1243,25 @@ if (age >= 18) {
 let currentHours = 10;
 
 if(currentHours < 12) {
-  console.log('Good Morning!');
   window.alert('Good Morning!');
 }
 
 if(currentHours >=6 && currentHours < 12) {
-  console.log('Good Morning!');
   window.alert('Good Morning!');
 }
 ```
 
 10.02. The if else statement
 ---------------------
-10.02. The if...else statement
----------------------
 
 - The JavaScript `if...else statement` is used to execute the code `weather condition is true or false`
-- The developer can enhance the decision-making capabilities by providing an alternative choice through adding an `else` statement to the `if` statement
-- The condition can be any expression that evaluates to true or false
-- If the condition evaluates to true, statements_1 are executed; otherwise, statements_2 are executed
 
-> **Note**: <br/>
-Use `else` to specify a block of code to be executed, `if the same condition is false`
-
-> **Syntax & Example**: `10.02.01.script.js`
-```javascript
-// if...else conditional statement
-
-/*if(condition/expression){  
-// content to be executed if condition is true - statements_1  
-}  
-else{  
-// content to be executed if condition is false - statements_2
-}*/
 
 let user = 'Ambar';
 
-if (user == 'Dinanath') {
-  console.log('Welcome Dinanath!');
+if (user == 'A') {
   window.alert('Welcome Dinanath!');
 } else {
-  console.log('Welcome Guest!');
   window.alert('Welcome Guest!');
 }
 
@@ -1967,10 +1270,8 @@ if (user == 'Dinanath') {
 let age = 15;
 
 if (age >= 18) {
-  console.log('MAJOR! Eligible for Voting');
   window.alert('MAJOR! Eligible for Voting');
 } else {
-  console.log('MINOR! NOT Eligible for Voting');
   window.alert('MINOR! NOT Eligible for Voting');
 }
 
@@ -1979,192 +1280,10 @@ if (age >= 18) {
 let currentHours = 10;
 
 if(currentHours < 12) {
-  console.log('Good Morning!');
   window.alert('Good Morning!');
 } else {
-  console.log('Good Evening!');
   window.alert('Good Evening!');
 }
-```
-
-10.03. The if else if else statement
----------------------
-10.03. The if...else, if...else statement
----------------------
-
-- The `if...else if...else` a special statement that is used to `combine multiple if...else statements`
-- It is an advanced form of if...else that allows us to `make a correct decision out of several conditions`
-
-> **Note**: <br/>
-Use `else if` to specify a new condition to test, `if the first condition is false`
-
-> **Syntax & Example**: `10.03.01.script.js`
-```javascript
-// If...else if...else conditional statement
-
-/*if(condition/expression 1) {
-    // Code to be executed if condition1 is true statements_1
-} else if(condition/expression 2) {
-    // Code to be executed if the condition1 is false and condition2 is true statements_2
-} else {
-    // Code to be executed if both condition1 and condition2 are false statements_3
-}*/
-
-let num1 = 200;
-let num2 = 100;
-
-if (num1 == num2) {
-  console.log('Both numbers are equal');
-} else if (num1 < num2 ) {
-  console.log('Number2 is greater!');
-} else {
-  console.log('Number1 is greater!');
-}
-
-// ------------------------------
-
-let age = 15; 
-
-if (age >= 60) {
-  console.log('SINIOR CIRIZEN!');
-} else if (age < 18) {
-  console.log('MINOR!');
-} else {
-  console.log('MAJOR - Middle Age!');
-}
-
-// ------------------------------
-
-let currentHours = 15;
-
-if(currentHours >=6 && currentHours< 12) {
-  console.log('Good Morning!');
-  window.alert('Good Morning!');
-} else if (currentHours >12 && currentHours <=18) {
-  console.log('Good AfterNoon!');
-  window.alert('Good AfterNoon!');
-} else {
-  console.log('Good Evening!');
-  window.alert('Good Evening!');
-}
-```
-
-10.04. The switch case statement
----------------------
-10.04. The switch...case statement
----------------------
-
-- The switch...case statement is alternative to an if...else if...else statement, both do almost the same thing
-- This matches the `case` and the `value of condition` and if the case matches, the subsequent block is executed and if none of the case matches `default block` is executed
-- The JavaScript switch statement is used to execute one code from multiple blocks of expressions
-
-> **Note**: <br/>
-Use `switch` to specify many `alternative blocks of code to be executed`
-
-> **Syntax & Example**: `10.04.01.script.js`
-```javascript
-// switch...case conditional statement
-
-/* switch(variable/expression){
-  case value1:
-    // Code to be executed if variable/expression === value1
-    break;
-  case value2:
-    // Code to be executed if variable/expression === value2
-    break;
-  default:
-    // Code to be executed if variable/expression is different from all values
-} */
-
-let grade = 'B'; // A.B,C, or something
-
-switch (grade) {
-  case 'A':
-    console.log('Great Job! - A Grade');
-    break;
-  case 'B':
-    console.log('Good! - B Grade');
-    break;
-  case 'C':
-    console.log('Congratulations! - Passed');
-    break;
-  default:
-    console.log('Sorry! - Failed...Keep trying!');
-    break;
-}
-
-// ------------------------------
-
-let sweets = ''; //cake, chocolates, biscuits
-
-switch (sweets) {
-  case 'chocolates':
-    console.log('Chubby Chocolates!');
-    break;
-  case 'cake':
-    console.log('Happy BirthDay Cake!');
-    break;
-  case 'biscuits':
-    console.log('Enjoy Biscuits!');
-    break;
-  default:
-    console.log('No Sweets! Try some other sweets!');
-    break;
-}
-
-// ------------------------------
-
-const color = 'red';
-
-switch(color) {
-  case 'red':
-    console.log('The Dark RED');
-    break;
-  case 'green':
-    console.log('Go Green');
-    break;
-  case 'blue':
-    console.log('Boys are Blue');
-    break;
-  case 'yellow':
-    console.log('Golden Yellow');
-    break;
-  default:
-    console.log('Its some other Color, Enter correct color');
-    break;
-}
-
-// ------------------------------
-
-let currentDate = new Date();
-let currentDay;
-
-switch(currentDate.getDay()) {
-  case 0:
-    currentDay = 'Sunday';
-    break;
-  case 1:
-    currentDay = 'Monday';
-    break;
-  case 2:
-    currentDay = 'Tuesday';
-    break;
-  case 3:
-    currentDay = 'Wednesday';
-    break;
-  case 4:
-    currentDay = 'Thursday';
-    break;
-  case 5:
-    currentDay = 'Friday';
-    break;
-  case 6:
-    currentDay = 'Saturday';
-    break;
-}
-
-console.log(`Today is ${currentDay}!`);
-
 ```
 
 Section 11. Array
@@ -2201,12 +1320,12 @@ There are 3 main ways to construct an array:
 // var myArray = [element0, element1, ..., elementN];
 
 var arrColors = ['Red', 'Green', 'Blue', 'Orange'];
-console.log(arrColors); // show all elements
+alert(arrColors); // show all elements
 
 // ------------------------------
 
-var arrCities = ['Delhi', 'Mumbai', 'Kolkota','Bengaluru','Chennai'];
-console.log(arrCities[1]); // show 1st index ie. 2nd positioned element
+var arrCities = ['AbuDhabi', 'Dubai', 'Alain'];
+alert(arrCities[1]); // show 1st index ie. 2nd positioned element
 
 // ------------------------------
 
@@ -2214,8 +1333,7 @@ var arrTechnologies = [];
 arrTechnologies[0] = 'Java';
 arrTechnologies[1] = 'Python';
 arrTechnologies[2] = 'C';
-console.log(arrTechnologies);
-console.log('Total Elements: ' + arrTechnologies.length);
+alert('Total Elements: ' + arrTechnologies.length);
 ```
 
 11.03. Create Array by creating an instance of array directly
@@ -2238,24 +1356,13 @@ arrColors[0] = 'Red'
 arrColors[1] = 'Green'
 arrColors[2] = 'Blue'
 arrColors[3] = 'Orange'
-console.log(arrColors); // show all elements
+alert(arrColors); // show all elements
 
 // read/get array items/elements
 for (let i = 0; i < arrColors.length; i++) {
   alert(arrColors[i]);
 }
 
-// ------------------------------
-
-var arrCities = Array();
-arrCities[0] = 'Delhi';
-arrCities[1] = 'Mumbai';
-arrCities[2] = 'DeKolkotalhi';
-arrCities[3] = 'Bengaluru';
-arrCities[4] = 'Chennai';
-console.log(arrCities); // show all elements
-
-// ------------------------------
 
 var arrTechnologies = new Array();
 
@@ -2264,7 +1371,7 @@ for (let i = 0; i <= 5; i++) {
   arrTechnologies[i] = 'JavaScript';
 }
 
-console.log(arrTechnologies); // show all elements
+alert(arrTechnologies); // show all elements
 ```
 
 11.04. Create Array by using an array constructor
@@ -2282,17 +1389,10 @@ console.log(arrTechnologies); // show all elements
 // var myArray = new Array(element0, element1, ..., elementN);
 
 var arrColors = new Array('Red', 'Green', 'Blue', 'Orange');
-console.log(arrColors); // show all elements
-
-// ------------------------------
-
-var arrCities = new Array('Delhi', 'Mumbai', 'Kolkota','Bengaluru','Chennai');
-console.log(arrCities); // show all elements
 
 // ------------------------------
 
 var arrJsFrameworks = new Array('jQuery','Angular','React','Node','Vue','Express','D3');
-console.log(arrJsFrameworks); // show all elements
 ```
 
 11.05. Getting the Length of an Array
@@ -2311,18 +1411,10 @@ console.log(arrJsFrameworks); // show all elements
 // myarray.length
 
 var arrColors = new Array('Red', 'Green', 'Blue', 'Orange');
-console.log(arrColors.length);
+alert(arrColors.length);
 
 // ------------------------------
 
-var arrCities = new Array('Delhi', 'Mumbai', 'Kolkota','Bengaluru','Chennai');
-console.log(arrCities.length);
-
-// ------------------------------
-
-var arrJsFrameworks = new Array('jQuery','Angular','React','Node','Vue','Express','D3');
-console.log(arrJsFrameworks.length);
-```
 
 11.06. Accessing Looping through an Array Elements
 ---------------------
@@ -2349,12 +1441,6 @@ console.log(arrColors[2]); // Blue
 
 // ------------------------------
 
-var arrCities = new Array('Delhi', 'Mumbai', 'Kolkota', 'Bengaluru', 'Chennai');
-console.log(arrCities[1]); // Mumbai
-console.log(arrCities[4]); // Chennai
-
-// ------------------------------
-
 var arrJsFrameworks = new Array('jQuery', 'Angular', 'React', 'Node', 'Vue', 'Express', 'D3');
 console.log(arrJsFrameworks[3]); // Node
 console.log(arrJsFrameworks[5]); // Express
@@ -2369,10 +1455,6 @@ for (let i = 0; i < arrJsFrameworks.length; i++) {
 ---------------------
 
 - One can add/edit an array element by simply specifying `array[index] and value` ie. `myarray[5]='value'`
-- If array `index exists it will simply edit` the old value and update the array else it will add an element to the array
-- `push()` method add a new element at the `end of an array`
-- `unshift()` method add a new element at the `beginning of an array`
-- myarray[indexNumber]='value', myarray[2]='value', myarray.push('value'), myarray.unshift('value')
 
 > **Syntax & Example**: `11.07.01.script.js`
 ```javascript
@@ -2381,23 +1463,11 @@ for (let i = 0; i < arrJsFrameworks.length; i++) {
 // myarray[indexNumber]='value', myarray[2]='value', myarray.push('value'), myarray.unshift('value')
 
 var arrColors = new Array('Red', 'Green', 'Blue', 'Orange');
-console.log(arrColors);
-console.log('arrColors.length: ' + arrColors.length);
+alert(arrColors);
+alert('arrColors.length: ' + arrColors.length);
 
 // add an element at the end of the array
 arrColors.push('Cyan');
-console.log(arrColors);
-console.log('arrColors.length: ' + arrColors.length);
-
-// add multiple elements at the end of the array
-arrColors.push('Magenta','Yellow');
-console.log(arrColors);
-console.log('arrColors.length: ' + arrColors.length);
-
-// ------------------------------
-
-// add multiple elements at the start of the array
-arrColors.unshift('Black','White');
 console.log(arrColors);
 console.log('arrColors.length: ' + arrColors.length);
 
@@ -2405,43 +1475,11 @@ console.log('arrColors.length: ' + arrColors.length);
 
 // edit 1st index ie. 'white' to 'pink'
 arrColors[1] = 'pink';
-console.log(arrColors);
-console.log('arrColors.length: ' + arrColors.length);
+alert(arrColors);
+alert('arrColors.length: ' + arrColors.length);
 ```
 
-11.08. Removing Deleting an Array Elements
----------------------
 
-- `pop()` method `remove the last element` from an array
-- `shift()` method remove the `first element` from an array
-- myarray.pop(), myarray.shift()
-
-> **Note**: <br/>
-The `push() and pop() methods runs faster` than unshift() and shift(). Because push() and pop() methods add and remove elements at the end of an array, therefore, the elements do not move. unshift() and shift() add and remove elements at the beginning of the array that requires re-indexing/re-structuring of the whole array.
-
-> **Syntax & Example**: `11.08.01.script`
-```javascript
-// remove array element from start and end
-
-// myarray.pop(), myarray.shift()
-
-var arrColors = new Array('Red', 'Green', 'Blue', 'Orange');
-console.log(arrColors);
-console.log('arrColors.length: ' + arrColors.length);
-
-// remove an element from the end of the array
-arrColors.pop();
-console.log(arrColors);
-console.log('arrColors.length: ' + arrColors.length);
-
-// ------------------------------
-
-// remove an element from the start of the array
-let startElement = arrColors.shift();
-console.log(startElement);
-console.log(arrColors);
-console.log('arrColors.length: ' + arrColors.length);
-```
 
 11.09. Array properties and methods
 ---------------------
@@ -2453,379 +1491,33 @@ console.log('arrColors.length: ' + arrColors.length);
 var arrColors = new Array('Red', 'Green', 'Blue', 'Orange');
 console.log(arrColors.length);
 
-// isArray() - check if array (check the type of variable is array)
-var arrCities = new Array('Delhi', 'Mumbai', 'Kolkota','Bengaluru','Chennai');
-console.log(Array.isArray(arrCities));
-console.log(Array.isArray('I am Dinanath'));
-
-// indexOf() - get index/location of provided value
-var arrJsFrameworks = new Array('jQuery','Angular','React','Node','Vue','Express','D3');
-console.log(arrJsFrameworks.indexOf('React'));
-
-// splice values
-console.log(arrJsFrameworks.splice(1,3)));
-
-// reverse array
-console.log(arrJsFrameworks.reverse()));
-
-// concatenate array
-let newArray = arrColors.concat(arrCities);
-
 // sort
 let newSortedColorsArray = arrColors.sort();
-console.log(newSortedColorsArray);
-console.log(numberArray.sort());
-
-/* exact ascending sort
-let sortedValues = numberArray.sort(function(num1,num2){
-  return num1 - num2;
-})
-*/
-
-/* exact descending sort
-let sortedValues = numberArray.sort(function(num1,num2){
-  return num2 - num1;
-})
+alert(newSortedColorsArray);
+alert(numberArray.sort());
 */
 
 // find
-console.log(numberArray.find(40));
+alert(numberArray.find(40));
 
 ```
 
 Section 12. Objects
 ===================== 
-
-12.01. Real Life Objects
----------------------
-12.01. Object Properties and Method examples
----------------------
-
-- In real life almost `everything is an object`. 
-  - For example: Human, Car, Building, Bike, Pen, Chair, Monitor, Keyboard, Vehicle, Mobile, Computer etc.
-- Let's have a look on some Objects with Properties and Methods:
-
-| Object        | Properties                              | Methods                            |
-|---------------|-----------------------------------------|------------------------------------|
-| Person        | Person.name = 'dinanath'; <br/> Person.weight = 65; <br/> Person.color = 'fair' | Person.walk(); <br/>  Person.talk();  <br/> Person.eat();   |
-| Bike          | Bike.brand = 'bajaj'; <br/> Bike.model = 'discover'; <br/> Bike.color = 'blue'; <br/> Bike.length = 60; <br/> Bike.height = 30; <br/>                                             | Bike.start(); <br/> Bike.break(); <br/> Bike.stop();      |
-| Watch         | Watch.type = 'analog'; <br/> Watch.price = 750; <br/>                           | Watch.showTime();  <br/> Watch.setAlarm();        |
-| | | |
-
-> **Note**: <br/>
-As a practice think of any other object in your surrounding and list down its Properties and Methods
-
-12.02. What is an Object?
----------------------
-12.02. What are the Objects?
----------------------
-
 - JavaScript is an `object-based language` and in JavaScript, almost everything is an object or acts like/as an object
-- An object is a `special/complex` data type that allows you to `store collections of data`
-- An object is a kind of container/declaration where we can group various `data, properties, and behaviors` under one roof (group related variables)
-- A JavaScript object is just a collection of `named values referred to as properties` of the object
-- Objects are defined with `curly braces { }`, the properties of an object are written in pairs (`propertyName: value`)
-- An object contains properties, defined as a `key-value pair` (Objects are a collection of `key-value pair`)
-- A property `key (name) is always a string`, but the value which it stores can be any data types, like strings, numbers, booleans, or complex data types like arrays, function and other objects
-- JavaScript object properties can be accessed through two methods:
-  1. .DOT notation: `object.firstName` 
-  2. []Bracket notation: `object['firstName']`
 
-### Different ways to create/define an Object
-
-There are 3 main ways to construct an object:
-1. By object literal 
-2. By creating an `instance` of Object directly (using `new` keyword)
-3. By using an `Object constructor` (using `new` keyword)
-
-12.03. Object literal
----------------------
-
-- The simplest way to create an object in JavaScript is enclosing a `comma-separated list of properties:values and methods in curly braces { }`
-- var MyObject = { property1: value1, property2: value2.....propertyN: valueN }  
-
-> **Syntax & Example**:
-```javascript
-// create object with object literal
-  
-// var MyObject = { property1: value1, property2: value2.....propertyN: valueN }
-
-// empty object
-var HumanObj = {};
-
-console.log(HumanObj);
-
-console.log('// ------------------------------');
-
-// object with properties
-var TechnologyObj = { 'name': 'JavaScript', 'version': 6, 'type': 'script', 'isStable': true }
-
-console.log(TechnologyObj.name);
-console.log(TechnologyObj['isStable']);
-
-console.log('// ------------------------------');
-
-// object properly alignment/arranged for readability - with quotes
-var VehicleObj1 = {
-  'type': 'LWM',
-  'brand': 'Maruti',
-  'model': 'Alto-100',
-  'color': 'White',
-  'isHighEndModel': true,
-  'price': 400000,
-  keyStart: function () {
-    console.log(this.model + ' started!');
-  }
-}
-
-console.log(VehicleObj1.brand);
-console.log(VehicleObj1['color']);
-VehicleObj1.keyStart();
-
-console.log('// ------------------------------');
-
-// object properly alignment/arranged for readability - with quotes
-var VehicleObj2 = {
-  type: 'LWM',
-  brand: 'Maruti',
-  model: 'Alto-100',
-  color: 'White',
-  isHighEndModel: true,
-  price: 400000,
-  keyStart: function () {
-    alert(this.model + 'started!');
-  }
-}
-
-console.log(VehicleObj1.brand);
-console.log(VehicleObj1['color']);
-VehicleObj1.keyStart();
-
-console.log('// ------------------------------');
-```
-
-12.04. Creating an instance of Object directly
----------------------
-12.04. Creating an instance of object directly (using the new keyword)
----------------------
-
-- Array instance can be created using the `new` keyword `new Array() with or without passing arguments/properties-methods` in constructor
-- var MyObject = new Object(); OR var MyObject = Object();
-
-> **Syntax & Example**:
-```javascript
-// create object with new keyword
-
-// var MyObject = new Object(); OR var MyObject = Object();
-
-// object with properties
-var TechnologyObj = new Object();
-
-TechnologyObj.name = 'JavaScript';
-TechnologyObj.version = 6;
-TechnologyObj.type = 'script';
-TechnologyObj.isStable = true
-
-console.log(TechnologyObj.name);
-console.log(TechnologyObj['type']);
-
-console.log('// ------------------------------');
-
-// object properly alignment/arranged for readability - with quotes
-var VehicleObj1 = {
-  'type': 'LWM',
-  'brand': 'Maruti',
-  'model': 'Alto-100',
-  'color': 'red',
-  'isHighEndModel': true,
-  'price': 400000,
-  keyStart: function () {
-    console.log(this.model + ' started!');
-  }
-}
-
-// access property with .DOT notation
-console.log(VehicleObj1.brand);
-
-// access property with []Bracket notation
-console.log(VehicleObj1['color']);
-VehicleObj1.keyStart();
-
-console.log('// ------------------------------');
-
-// object properly alignment/arranged for readability - without quotes
-var VehicleObj2 = {
-  type: 'LWM',
-  brand: 'Tata',
-  model: 'Safari',
-  color: 'White',
-  isHighEndModel: false,
-  price: 1400000,
-  keyStart: function () {
-    alert(this.model + 'started!');
-  }
-}
-
-// access property with .DOT notation
-console.log(VehicleObj2.brand);
-
-// access property with []Bracket notation
-console.log(VehicleObj2['color']);
-VehicleObj1.keyStart();
-
-console.log('// ------------------------------');
-```
-
-12.05. Object constructor
----------------------
-12.05. Object constructor (using the new keyword)
----------------------
-
-- In this method, create a function with arguments 
-- Each argument value can be assigned in the current object by using `this` keyword, `this` keyword refers to the `current object`
-
-> **Syntax & Example**: 
-```javascript
-// create an object with new keyword - Object constructor with function
-
-function Technology(name, version, type) {
-  this.name = name;
-  this.version = version;
-  this.type = type;
-  console.log(this.name);
-  console.log(this.type);
-}
-
-let JavaScript = new Technology('JavaScript', 6, 'Script Language');
-console.log(JavaScript.version);
-
-console.log('// ------------------------------');
-
-function Vehicle(brand,model,color,price) {
-  this.brand = brand;
-  this.model = model;
-  this.color = color;
-  this.price = price;
-  this.keyStart = function () {
-    console.log(this.model + ' started!');
-  }
-}
-
-var Maruti = new Vehicle('Maruti','Alto-100','White',400000);
-Maruti.keyStart();
-
-console.log('// ------------------------------');
-```
-
-12.06. Accessing objects properties
----------------------
-12.06. Looping through Objects properties
----------------------
-
-- To access or get the value of a property, you can use the `dot .`, or `square bracket []` notation
-- We can iterate through the `key-value pairs` of an object using the `for...in loop`
-- MyObject.propertyName; OR MyObject[propertyName]; OR MyObject['propertyName']
-
-> **Syntax & Example**: 
-```javascript
-// access/loop thourgh array element
-
-// MyObject.propertyName; OR MyObject[propertyName]; OR MyObject['propertyName']
-
-var Person = {
-  name:'Dinanath',
-  domain:'IT/Software',
-  gender:'Male',
-  city:'Mumbai',
-  country:'India'
-}
-
-console.log(Person.name);
-console.log(Person['domain']);
-
-console.log('// ------------------------------');
-
-// Loop through an Array Elements
-for (props in Person) {
-  console.log(Person[props])
-}
-
-console.log('// ------------------------------');
-```
-
-12.07. Removing Deleting objects properties
----------------------
-
-- The `delete` operator can be used to completely remove properties from an object
-- delete MyObject.propertyName;
-
-> **Note**: <br/>
-The `delete` operator only removes an `object property or array element`. It does not work/does not affect variables or declared functions.
-
-> **Syntax & Example**: 
-```javascript
-// remove/delete Object's Properties
-
-// delete MyObject.propertyName;
-
-var Person = {
-  name:'Dinanath',
-  domain:'IT/Software',
-  gender:'Male',
-  city:'Mumbai',
-  country:'India'
-}
-
-delete Person.name
-console.log(Person);
-console.log(Person.name);
-console.log(Person['domain']);
-```
-
-12.08. Manipulating by Value Vs Reference
----------------------
-
-In JavaScript we have two categories of types:
-1. Value Types (Primitives = Basic type) - Primitives are copied by their value
-2. Reference Types (Objects = Complex type) - Objects are copied by their Reference/Location in memory
-
-### 1. Value Types (Primitives)
-
-  1. Number
-  2. String
-  3. Boolean
-  4. Undefined
-  5. Null
-  6. Symbol (ES6)
-
-### 2. Reference Types (Objects)
-
-  1. Object
-  2. Function 
-  3. Array
-
-> **Syntax & Example**: 
-```
-???
-
-```
-
-12.09. The Window object 
+12.01. The Window object 
 ---------------------
 
 - Window Object the global variable/global object `available in the browser environment`, represents the browser window in which the script is running
 - Simply, the window object `represents a window in a browser`
 - The Window interface represents a window containing a DOM (Document Object Model)
-- Window is the object of browser (`The Browser Object Model (BOM)`), it is not the object of javascript
-- The Browser Object Model (BOM) allows JavaScript to "communicate/talk to" the browser
 - In `Browser -> Inspect Element -> Console Panel` -> Type `Window`, check different properties and methods available
 
 > **Syntax & Example**: 
 ```javascript
 
 // Methods
-window.console.log('Console! Hello, Welcome to JavaScript');
-
 window.alert('Alert! Hello, Welcome to JavaScript');
 
 // const namePrompt = window.prompt();
@@ -2834,54 +1526,12 @@ window.alert(namePrompt);
 
 
 if(window.confirm('Are you sure?')) {
-  window.console.log('YES - selected');
+  window.alert('YES - selected');
 } else {
-  window.console.log('NO - clicked');
+  window.alert('NO - clicked');
 }
 
-// Properties
 
-// full/complete browser window height & width
-outerHeight = window.outerHeight;
-outerWidth = window.outerWidth;
-
-console.log('outerHeight -', outerHeight, '::', 'outerWidth -', outerWidth );
-
-// document/page height & width
-
-innerHeight = window.innerHeight;
-innerWidth = window.innerWidth;
-
-console.log('innerHeight -', innerHeight, '::', 'innerWidth -', innerWidth );
-
-// scroll position
-
-console.log('scrollY', window.scrollY);
-console.log('scrollX', window.scrollX);
-
-// location 
-
-console.log('current window location/url', window.location);
-console.log('current window location/url', window.location.href);
-
-// location redirect
-
-window.location.href = 'https://www.google.com';
-
-// window location/visited history
-
-window.history.go(-1);
-
-let totalPagesVisitedHistory = window.history.length;
-
-// current browser details - navigator
-
-let curBrowser = window.navigator.appName; 
-//window.navigator.userAgent;
-window.navigator.platform;
-window.navigator.vendor;
-
-```
 
 12.10. The Math Object
 ---------------------
@@ -2894,24 +1544,11 @@ window.navigator.vendor;
 
 let pieValue = Math.PI;
 
-console.log(Math.E);
-console.log(Math.round(2.6));
+let a= Math.sqrt(64));
 
-console.log(Math.ceil(2.6));
-console.log(Math.floor(2.6));
+alert(Math.pow(8,2)); //64
+alert(Math.pow(10,3)); //10 * 10 * 10 = 1000
 
-console.log(Math.sqrt(64));
-console.log(Math.abs(-10)); //return absolute ie positive number
-
-console.log(Math.pow(8,2)); //64
-console.log(Math.pow(10,3)); //10 * 10 * 10 = 1000
-
-console.log(Math.min(20, 5, 9, 15, 2));
-console.log(Math.max(20, 5, 9, 15, 2));
-
-console.log(Math.random());
-console.log(Math.random() * 20 + 1); // random number till 20
-console.log(Math.floor(Math.random() * 20 + 1)); // random number till 20 without any decimals
 
 ```
 
@@ -2926,10 +1563,9 @@ console.log(Math.floor(Math.random() * 20 + 1)); // random number till 20 withou
 ```javascript
 
 const today = new Date();
-console.log('today is:', today);
+alert('today is:', today);
 
-const date1 = new Date('March 29 1980');
-const date2 = new Date('09-10-1980');
+const date1 = new Date('March 28 1979');
 
 let currentDate = new Date();
 
@@ -2939,9 +1575,6 @@ const currentMonth = currentDate.getMonth();
 const currentYear = currentDate.getYear();
 const currentHours = currentDate.getHours();
 const currentMinutes = currentDate.getMinutes();
-
-const newBirthDate = currentDate.setMonth(5);
-console.log(newBirthDate);
 
 ```
 
