@@ -1233,7 +1233,7 @@ if(currentHours >=6 && currentHours < 12) {
 
 - The JavaScript `if...else statement` is used to execute the code `weather condition is true or false`
 
-
+```javascript
 let user = 'Ambar';
 
 if (user == 'A') {
