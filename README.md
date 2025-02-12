@@ -645,10 +645,10 @@ alert(typeof(1 == 2)); // "boolean"
 
 // Arrays
 var techArray = [];
-console.log(typeof ['JavaScript', 'jQuery', 'Angular']);  // "object"
+alert(typeof ['JavaScript', 'jQuery', 'Angular']);  // "object"
 
 // Functions
-console.log(typeof window.alert); // "function"
+alert(typeof window.alert); // "function"
 ```
 
 06.06. Type conversion
@@ -1036,8 +1036,8 @@ alert(firstName + ' ' + lastName);
 alert(firstName.length);
 
 // change case
-console.log(firstName.toLowercase());
-console.log(firstName.toUppercase());
+alert(firstName.toLowercase());
+alertfirstName.toUppercase());
 
 
 // indexOf
@@ -1159,7 +1159,7 @@ let i = 1;
 do {
   alert('Hello, The current index/num is: ' + i);
   document.write('<li>Hello, The current index/num is: ' + i + '</li>');
-  console.log('Hello, The current index/num is: ' + i);
+  alert('Hello, The current index/num is: ' + i);
   i++;
 }
 while (i <= 5); 
@@ -1413,14 +1413,14 @@ alert(arrColors.length);
 
 var arrColors = new Array('Red', 'Green', 'Blue', 'Orange');
 
-console.log(arrColors[0]); // Red
-console.log(arrColors[2]); // Blue
+alert(arrColors[0]); // Red
+alert(arrColors[2]); // Blue
 
 // ------------------------------
 
 var arrJsFrameworks = new Array('jQuery', 'Angular', 'React', 'Node', 'Vue', 'Express', 'D3');
-console.log(arrJsFrameworks[3]); // Node
-console.log(arrJsFrameworks[5]); // Express
+alert(arrJsFrameworks[3]); // Node
+alert(arrJsFrameworks[5]); // Express
 
 // Loop through an Array Elements
 for (let i = 0; i < arrJsFrameworks.length; i++) {
@@ -1445,8 +1445,8 @@ alert('arrColors.length: ' + arrColors.length);
 
 // add an element at the end of the array
 arrColors.push('Cyan');
-console.log(arrColors);
-console.log('arrColors.length: ' + arrColors.length);
+alert(arrColors);
+alert('arrColors.length: ' + arrColors.length);
 
 // ------------------------------
 
@@ -1466,7 +1466,7 @@ alert('arrColors.length: ' + arrColors.length);
 
 // length
 var arrColors = new Array('Red', 'Green', 'Blue', 'Orange');
-console.log(arrColors.length);
+alert(arrColors.length);
 
 // sort
 let newSortedColorsArray = arrColors.sort();
@@ -1600,13 +1600,13 @@ A mouse event is triggered when the user clicks some element, move the mouse poi
     <span oncontextmenu="alert('You have Right clicked on Me!')" style="color:blue;cursor: pointer;">Occurs when a `user clicks the right mouse button` on an element to open a context menu</span>
   </li>
   <li><strong>mouseover / mouseout</strong> (`onmouseover` &  `onmouseout` event handler) <br/>
-    <span onmouseover="console.log('You have Mouse Over Me!')" onmouseout="console.log('You have Mouse Out Me!')"  style="color:blue;cursor: pointer;">Occurs when the mouse pointer/cursor comes over / leaves (goes outside of) an element</span>
+    <span onmouseover="alert('You have Mouse Over Me!')" onmouseout="alert('You have Mouse Out Me!')"  style="color:blue;cursor: pointer;">Occurs when the mouse pointer/cursor comes over / leaves (goes outside of) an element</span>
   </li>
   <li><strong>mousedown / mouseup</strong> (`onclick/onmousedown` & `onmouseup`) <br/>
-    <span onmousedown="console.log('You have clicked on Me!')" onmouseup="console.log('You have released click on Me!')"style="color:blue;cursor: pointer;">Occurs when the mouse button is pressed / released over an element</span>
+    <span onmousedown="alert('You have clicked on Me!')" onmouseup="alert('You have released click on Me!')"style="color:blue;cursor: pointer;">Occurs when the mouse button is pressed / released over an element</span>
   </li>
   <li><strong>mousemove</strong> (`onmousemove` event handler) <br/>
-    <span onmousemove="console.log('You Moved mouse over Me!')" style="color:blue;cursor: pointer;">Occurs when the mouse pointer/cursor is moved</span>
+    <span onmousemove="alert('You Moved mouse over Me!')" style="color:blue;cursor: pointer;">Occurs when the mouse pointer/cursor is moved</span>
   </li>
 </ol>
 
@@ -1623,7 +1623,7 @@ const headingText = document.querySelector('h1');
 button.addEventListener('mousemove', someFunction);
 
 function someFunction(evt) {
-  console.log('Event Details:', evt);
+  alert('Event Details:', evt);
   headingText.innerText = 'Changed after click!';
 
   document.body.style.backgroundColor = `rgb(${evt.offsetX},${evt.offsetY},40)`
@@ -1646,9 +1646,9 @@ A keyboard event is fired up when the user presses or release a key on the keybo
 <label>Enter Name:</label> 
 
 <input type="text" placeholder="Enter Name" 
-onkeydown="console.log('onkeydown pressed a key inside input text!')" 
-onkeyup="console.log('onkeyup released a key inside input text!')" 
-onkeypress="console.log('onkeypress Other than Ctrl, Shift, Alt, Esc, Arrow keys pressed!')"/>
+onkeydown="alert('onkeydown pressed a key inside input text!')" 
+onkeyup="alert('onkeyup released a key inside input text!')" 
+onkeypress="alert('onkeypress Other than Ctrl, Shift, Alt, Esc, Arrow keys pressed!')"/>
 ```
 
 <hr/>
@@ -1660,7 +1660,7 @@ const nameText = document.querySelector('inputNameText');
 nameText.addEventListener('keypress', nameData);
 
 function nameData(evt) {
-  console.log('nameData function called');
+  alert('nameData function called');
   headingText.innerText = evt.target.value;
 }
 
@@ -1686,7 +1686,7 @@ A form event is triggered when a form control/form fields (text fields/radio but
   <label>First Name:</label>
   <input type="text" name="first-name" onfocus="showHighlight(this)" onblur="resetHighlight(this)" required> <br/> <br/>
 
-  <select onchange="console.log('You have selected something!');">
+  <select onchange="alert('You have selected something!');">
       <option>Select</option>
       <option>Male</option>
       <option>Female</option>
@@ -1721,7 +1721,7 @@ const personalDataForm = document.querySelector('form');
 personalDataForm.addEventListener('submit', submitData);
 
 function submitData(evt) {
-  console.log('submitData function called');
+  alert('submitData function called');
   // to prevent the default behavior of an element - button, link, submit button etc.
   evt.preventDefault();
 }
@@ -1755,8 +1755,8 @@ The unload event is not supported properly in most of the browsers.
   window.onresize = resizeWindowSize;
 
   function resizeWindowSize() {
-    console.log('window.outerWidth ' + window.outerWidth);
-    console.log('window.outerHeight ' + window.outerHeight);
+    alert('window.outerWidth ' + window.outerWidth);
+    alert('window.outerHeight ' + window.outerHeight);
   }
   
 </script>
@@ -1783,7 +1783,7 @@ The unload event is not supported properly in most of the browsers.
 // event handler function
 
 function fnShowMessage () {
-  console.log('Welcome to fnShowMessage event handler!');
+  alert('Welcome to fnShowMessage event handler!');
   alert('Welcome to fnShowMessage event handler!');
 }
 ```
@@ -1803,7 +1803,7 @@ This way should be avoided as it makes markup less readable and making it harder
 
 // method - 1
 messageButton1.onclick = function () {
-  console.log('Welcome to event handler!');
+  alert('Welcome to event handler!');
   alert('Welcome to event handler!');
 }
 
@@ -1822,7 +1822,7 @@ function fnShowMessage() {
 // myButton.addEventListener('click', someFunc, false);
 
 document.querySelector('.clear-button').addEventLister('click', function() {
-  console.log('clear-button clicked');
+  alert('clear-button clicked');
 })
 ```
 
@@ -1924,18 +1924,18 @@ let mainHeadingText = mainHeadingElement.innerText;
 alert('mainHeadingHtml: ' + mainHeadingHtml); // text with complete html tags
 alert('mainHeadingText: ' + mainHeadingText); // only text
 
-// console.log('// ------------------------------');
+// alert('// ------------------------------');
 
 // set text of selected element
 mainHeadingElement.innerHTML = 'This text changed with DOM method...';
 
-// console.log('// ------------------------------');
+// alert('// ------------------------------');
 
 // set text of another element
 let subHeadingElement = document.getElementById('subHeadingText');
 subHeadingElement.innerHTML = mainHeadingElement.innerHTML ;
 
-// console.log('// ------------------------------');
+// alert('// ------------------------------');
 
 // set css style
 mainHeadingElement.style.backgroundColor = 'pink';
@@ -1950,19 +1950,19 @@ mainHeadingElement.style.backgroundColor = 'pink';
 ```javascript
 // Selecting elements with class
 let listItems = document.getElementsByClassName("list-item");
-console.log(listItems);
+alert(listItems);
 
 // get text of 1st ie 0th element
 let firstListItemText = listItems[0].innerHTML;
-console.log('firstListItemText: ' + firstListItemText);
+alert('firstListItemText: ' + firstListItemText);
 
-// console.log('// ------------------------------');
+// alert('// ------------------------------');
 
 // set text of last element
 let lastListItem = (listItems.length - 1);
 listItems[lastListItem].style.color = 'blue';
 
-// console.log('// ------------------------------');
+// alert('// ------------------------------');
 
 // highlighting all list items through loop
 for(var listItem in listItems) {  
@@ -1980,27 +1980,27 @@ for(var listItem in listItems) {
 ```javascript
 // Selecting all LI elements with tag name
 let liElements = document.getElementsByTagName('li');
-console.log(liElements);
+alert(liElements);
 
-// console.log('// ------------------------------');
+// alert('// ------------------------------');
 
 // get total li tags/elements in page
 let totalLiElements = liElements.length;
-console.log(totalLiElements);
+alert(totalLiElements);
 
-// console.log('// ------------------------------');
+// alert('// ------------------------------');
 
 // get text of 1st ie 0th li element
 let firstLiText = liElements[0].innerHTML;
-console.log('firstLiText: ' + firstLiText);
+alert('firstLiText: ' + firstLiText);
 
-// console.log('// ------------------------------');
+// alert('// ------------------------------');
 
 // set text of last element
 let lastLi = (liElements.length - 1);
 liElements[lastLi].style.color = 'blue';
 
-// console.log('// ------------------------------');
+// alert('// ------------------------------');
 
 // highlighting all li elements through loop
 for(var li in liElements) {  
@@ -2008,7 +2008,7 @@ for(var li in liElements) {
   liElements[li].style.background = '#bbbbbb';
 }
 
-// console.log('// ------------------------------');
+// alert('// ------------------------------');
 ```
 
 ### 14.03.04. Selecting Elements with CSS Selectors (`querySelectorAll()`)
@@ -2021,10 +2021,10 @@ for(var li in liElements) {
 ```javascript
 // Selecting all ul -> li elements
 let ulLiElement = document.querySelectorAll('ul li');
-console.log(ulLiElement);
+alert(ulLiElement);
 
 let ulListItemClass = document.querySelectorAll("ul li.list-item")
-console.log(ulListItemClass);
+alert(ulListItemClass);
 
 // set color of last li element
 ulLiElement[ulLiElement.length - 1].style.color = 'red';
@@ -2084,18 +2084,18 @@ let mainHeadingElement = document.getElementById('mainHeadingText');
 mainHeadingElement.style.padding = '5px';
 mainHeadingElement.style.backgroundColor = 'pink';
 
-// console.log('// ------------------------------');
+// alert('// ------------------------------');
 
 // get inline css styles
-console.log('mainHeadingElement.style.padding:',mainHeadingElement.style.padding);
-console.log('mainHeadingElement.style.backgroundColor:',mainHeadingElement.style.backgroundColor);
+alert('mainHeadingElement.style.padding:',mainHeadingElement.style.padding);
+alert('mainHeadingElement.style.backgroundColor:',mainHeadingElement.style.backgroundColor);
 
-// console.log('// ------------------------------');
+// alert('// ------------------------------');
 
 // get computed style information/ any type of css styles internal/embeded style sheets
 var cssStyles = window.getComputedStyle(mainHeadingElement);
-console.log('internal style - color:',cssStyles.color);
-console.log('internal style - border:',cssStyles.border);
+alert('internal style - color:',cssStyles.color);
+alert('internal style - border:',cssStyles.border);
 ```
 
 ### 14.04.03. Applying/Adding CSS Classes to Elements - className
@@ -2188,13 +2188,13 @@ let linkTextElement = document.getElementById('linkText');
 
 // getting the attributes values
 let getAttrClass = mainHeadingElement.getAttribute('class');
-console.log('getAttrClass:', getAttrClass);
+alert('getAttrClass:', getAttrClass);
 
 let getAttrDisabled = clickButtonElement.getAttribute('disabled');
-console.log('getAttrDisabled:', getAttrDisabled);
+alert('getAttrDisabled:', getAttrDisabled);
 
 let getAttrHref = linkTextElement.getAttribute('href');
-console.log('getAttrHref:', getAttrHref);
+alert('getAttrHref:', getAttrHref);
 ```
 
 ### 14.05.03. Removing Attributes from Elements
@@ -2212,10 +2212,10 @@ let linkTextElement = document.getElementById('linkText');
 mainHeadingElement.removeAttribute('class');
 
 // verify/confirm class removed or not
-console.log('mainHeadingElement.getAttribute:', mainHeadingElement.getAttribute('class'));
-console.log('mainHeadingElement.classList.contains:', mainHeadingElement.classList.contains('class'));
+alert('mainHeadingElement.getAttribute:', mainHeadingElement.getAttribute('class'));
+alert('mainHeadingElement.classList.contains:', mainHeadingElement.classList.contains('class'));
 
-// console.log('// ------------------------------');
+// alert('// ------------------------------');
 
 clickButtonElement.removeAttribute('disabled');
 
